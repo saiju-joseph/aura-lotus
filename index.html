@@ -1,0 +1,2193 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Delius&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+         rel="stylesheet"
+      />
+      <link
+         rel="stylesheet"
+         href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+      />
+
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      />
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      />
+      <link
+         href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+         rel="stylesheet"
+         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+         crossorigin="anonymous"
+      />
+      <link rel="stylesheet" href="css/style.css" />
+      <title>Aura Lotus Fashion Studio</title>
+   </head>
+   <body>
+      <header>
+         <div class="container top-bar py-4">
+            <div class="row align-items-center justify-content-between">
+               <div class="col-lg-4 search-desktop d-none d-lg-block">
+                  <div class="search-wrapper">
+                     <i class="bi bi-search"></i>
+                     <input
+                        type="text"
+                        class="form-control search-box"
+                        placeholder="Search for products..."
+                     />
+                  </div>
+               </div>
+               <div class="col-lg-4 col-6 text-center">
+                  <a class="navbar-brand" href="index.html">
+                     <img
+                        src="images/logo.png"
+                        alt="Logo"
+                        class="img-fluid logo-image"
+                     />
+                  </a>
+               </div>
+               <div class="col-lg-4 col-6 icons-desktop">
+                  <div
+                     class="d-flex align-items-center justify-content-end nav-right nav-icons"
+                  >
+                     <a href="#" class="search d-inline-flex me-lg-4 me-3">
+                        <i class="bi bi-instagram"></i>
+                     </a>
+                     <div class="d-inline-flex position-relative me-lg-4 me-3">
+                        <a href="#" class="cart"><i class="bi bi-bag"></i></a>
+                        <span
+                           class="d-flex align-items-center justify-content-center notification"
+                           >0</span
+                        >
+                     </div>
+                     <div class="d-inline-flex position-relative">
+                        <ul class="list-unstyled drop-right-menu mb-0">
+                           <li class="nav-item dropdown me-lg-4 me-3">
+                              <a
+                                 class="dropdown-toggle"
+                                 href="#"
+                                 id="navbarDropdown"
+                                 role="button"
+                                 data-bs-toggle="dropdown"
+                                 aria-expanded="false"
+                              >
+                                 <i class="bi bi-person user"></i>
+                              </a>
+                              <ul
+                                 class="dropdown-menu shadow-sm"
+                                 aria-labelledby="navbarDropdown"
+                              >
+                                 <li>
+                                    <a
+                                       class="dropdown-item"
+                                       href="#"
+                                       data-bs-toggle="modal"
+                                       data-bs-target="#loginModal"
+                                       >Login</a
+                                    >
+                                 </li>
+                                 <li>
+                                    <a class="dropdown-item" href="#">Cart</a>
+                                 </li>
+                                 <li>
+                                    <a class="dropdown-item" href="#"
+                                       >Wishlist</a
+                                    >
+                                 </li>
+                              </ul>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <nav class="navbar navbar-expand-lg navbar-light py-2">
+            <div class="container">
+               <button
+                  class="navbar-toggler order-lg-2"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarSupportedContent"
+                  aria-controls="navbarSupportedContent"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+               >
+                  <span class="navbar-toggler-icon"
+                     ><i class="bi bi-bar-chart"></i
+                  ></span>
+               </button>
+               <div
+                  class="collapse navbar-collapse order-lg-1"
+                  id="navbarSupportedContent"
+               >
+                  <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                     <li class="nav-item">
+                        <a
+                           class="nav-link active"
+                           aria-current="page"
+                           href="index.html"
+                           >Home</a
+                        >
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="#">Shop</a>
+                     </li>
+                     <li class="nav-item dropdown">
+                        <a
+                           class="nav-link dropdown-toggle"
+                           href="#"
+                           id="navbarDropdown"
+                           role="button"
+                           data-bs-toggle="dropdown"
+                           aria-expanded="false"
+                        >
+                           Products
+                        </a>
+                        <ul
+                           class="dropdown-menu"
+                           aria-labelledby="navbarDropdown"
+                        >
+                           <li>
+                              <a class="dropdown-item" href="#">Product One</a>
+                           </li>
+                           <li>
+                              <a class="dropdown-item" href="#">Product Two</a>
+                           </li>
+                           <li>
+                              <a class="dropdown-item" href="#"
+                                 >Product Three</a
+                              >
+                           </li>
+                        </ul>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </nav>
+      </header>
+      <!-- carousel -->
+      <div
+         id="carouselExampleCaptions"
+         class="carousel slide"
+         data-bs-ride="carousel"
+      >
+         <div class="carousel-indicators">
+            <button
+               type="button"
+               data-bs-target="#carouselExampleCaptions"
+               data-bs-slide-to="0"
+               class="active"
+               aria-current="true"
+               aria-label="Slide 1"
+            ></button>
+            <button
+               type="button"
+               data-bs-target="#carouselExampleCaptions"
+               data-bs-slide-to="1"
+               aria-label="Slide 2"
+            ></button>
+         </div>
+         <div class="carousel-inner">
+            <div class="carousel-item active">
+               <img
+                  src="images/main-slide-1.png"
+                  class="d-block w-100"
+                  alt="Slider"
+               />
+               <!-- <div class="carousel-caption">
+                  <div class="caption-text">
+                     <h1>Eid Ready Collection</h1>
+                     <p>
+                        Order in 48 hrs for guaranteed Eid delivery across UAE
+                     </p>
+                     <button
+                        class="btn btn-dark px-lg-5 text-white shadow mt-lg-4"
+                        type="button"
+                     >
+                        Shop Now
+                     </button>
+                  </div>
+               </div> -->
+            </div>
+            <div class="carousel-item">
+               <img
+                  src="images/main-slide-2.png"
+                  class="d-block w-100"
+                  alt="Slider"
+               />
+               <!-- <div class="carousel-caption">
+                  <div class="caption-text">
+                     <h1>Eid Ready Collection</h1>
+                     <p>
+                        Order in 48 hrs for guaranteed Eid delivery across UAE
+                     </p>
+                     <button
+                        class="btn btn-dark px-lg-5 text-white shadow mt-lg-4"
+                        type="button"
+                     >
+                        Shop Now
+                     </button>
+                  </div>
+               </div> -->
+            </div>
+         </div>
+         <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev"
+         >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+         </button>
+         <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next"
+         >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+         </button>
+      </div>
+
+      <main>
+         <div class="container py-5 featured-products card-carousel">
+            <div class="col-12 text-center mb-5">
+               <h1 class="product-title main-head">Shop by Category</h1>
+               <div class="head-border-line"></div>
+            </div>
+
+            <div class="row mt-5">
+               <div class="owl-carousel product-slider">
+                  <div class="product-card shadow-sm">
+                     <a href="#">
+                        <div class="image-wrapper">
+                           <img
+                              src="images/pro-1.jpg"
+                              class="product-img default-img img-fluid"
+                           />
+                        </div>
+                        <div class="product-info p-3">
+                           <p class="text-ellipsis">Rose gold open bangle</p>
+                           <a href="#">Explore All</a>
+                        </div>
+                        <div class="card-overlay"></div>
+                     </a>
+                  </div>
+                  <div class="product-card shadow-sm">
+                     <a href="#">
+                        <div class="image-wrapper">
+                           <img
+                              src="images/pro-2.jpg"
+                              class="product-img default-img img-fluid"
+                           />
+                        </div>
+                        <div class="product-info p-3">
+                           <p class="text-ellipsis">Rose gold open bangle</p>
+                           <a href="#">Explore All</a>
+                        </div>
+                        <div class="card-overlay"></div>
+                     </a>
+                  </div>
+                  <div class="product-card shadow-sm">
+                     <a href="#">
+                        <div class="image-wrapper">
+                           <img
+                              src="images/pro-3.png"
+                              class="product-img default-img img-fluid"
+                           />
+                        </div>
+                        <div class="product-info p-3">
+                           <p class="text-ellipsis">Rose gold open bangle</p>
+                           <a href="#">Explore All</a>
+                        </div>
+                        <div class="card-overlay"></div>
+                     </a>
+                  </div>
+                  <div class="product-card shadow-sm">
+                     <a href="#">
+                        <div class="image-wrapper">
+                           <img
+                              src="images/pro-4.png"
+                              class="product-img default-img img-fluid"
+                           />
+                        </div>
+                        <div class="product-info p-3">
+                           <p class="text-ellipsis">Rose gold open bangle</p>
+                           <a href="#">Explore All</a>
+                        </div>
+                        <div class="card-overlay"></div>
+                     </a>
+                  </div>
+                  <div class="product-card shadow-sm">
+                     <a href="#">
+                        <div class="image-wrapper">
+                           <img
+                              src="images/pro-5.png"
+                              class="product-img default-img img-fluid"
+                           />
+                        </div>
+                        <div class="product-info p-3">
+                           <p class="text-ellipsis">Rose gold open bangle</p>
+                           <a href="#">Explore All</a>
+                        </div>
+                        <div class="card-overlay"></div>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- <div class="container py-5 featured-products card-carousel">
+            <div class="col-12 text-center mb-5">
+               <h1 class="product-title main-head">Shop by Category</h1>
+               <div class="head-border-line"></div>
+            </div>
+            <div class="row mt-5">
+               <div class="col-lg-3">
+                  <div class="product-card shadow-sm">
+                     <a href="product-details.html">
+                        <div class="image-wrapper">
+                           <img
+                              src="images/model-2.jpeg"
+                              class="product-img default-img img-fluid"
+                           />
+                        </div>
+                        <div class="product-info p-3">
+                           <p class="text-ellipsis text-uppercase">
+                              Prayer Ready- modest
+                           </p>
+                        </div>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div> -->
+         <div class="container shop-collections py-lg-5">
+            <div class="col-12 text-center mb-5">
+               <h1 class="product-title main-head">New Arrivals</h1>
+               <div class="head-border-line"></div>
+            </div>
+            <div class="row g-4">
+               <div class="col-lg-3">
+                  <div class="product-collections">
+                     <div class="product-card shadow-sm image-card">
+                        <div class="image-wrapper">
+                           <div class="tag-card new shadow-sm">30% Off</div>
+                           <img
+                              src="images/pro-6.png"
+                              alt="collections"
+                              class="img-fluid"
+                           />
+                        </div>
+                        <div class="product-details py-3">
+                           <div class="pro-name">Product One</div>
+                           <div class="pro-price">
+                              <p class="text-uppercase mb-0">
+                                 <span class="fw-bold new-price"
+                                    ><i class="bi bi-currency-rupee"></i
+                                    >799.00</span
+                                 >
+                                 <span class="old-price"
+                                    ><i class="bi bi-currency-rupee"></i
+                                    >999.00</span
+                                 >
+                              </p>
+                           </div>
+                        </div>
+                        <div class="d-grid">
+                           <button class="btn bg-btn" type="button">
+                              Add to Cart
+                           </button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-3">
+                  <div class="product-collections">
+                     <div class="product-card shadow-sm image-card">
+                        <div class="image-wrapper">
+                           <div class="tag-card bg-danger shadow-sm text-white">
+                              Out of stock
+                           </div>
+                           <img
+                              src="images/pro-7.png"
+                              alt="collections"
+                              class="img-fluid"
+                           />
+                        </div>
+                        <div class="product-details py-3">
+                           <div class="pro-name">Product One</div>
+                           <div class="pro-price">
+                              <p class="text-uppercase mb-0">
+                                 <span class="fw-bold new-price"
+                                    ><i class="bi bi-currency-rupee"></i
+                                    >799.00</span
+                                 >
+                                 <span class="old-price"
+                                    ><i class="bi bi-currency-rupee"></i
+                                    >999.00</span
+                                 >
+                              </p>
+                           </div>
+                        </div>
+                        <div class="d-grid">
+                           <button class="btn bg-btn disabled" type="button">
+                              Add to Cart
+                           </button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-3">
+                  <div class="product-collections">
+                     <div class="product-card shadow-sm image-card">
+                        <div class="image-wrapper">
+                           <div class="tag-card new shadow-sm">50% Off</div>
+                           <img
+                              src="images/pro-8.png"
+                              alt="collections"
+                              class="img-fluid"
+                           />
+                        </div>
+                        <div class="product-details py-3">
+                           <div class="pro-name">Product One</div>
+                           <div class="pro-price">
+                              <p class="text-uppercase mb-0">
+                                 <span class="fw-bold new-price"
+                                    ><i class="bi bi-currency-rupee"></i
+                                    >2799.00</span
+                                 >
+                                 <span class="old-price"
+                                    ><i class="bi bi-currency-rupee"></i
+                                    >999.00</span
+                                 >
+                              </p>
+                           </div>
+                        </div>
+                        <div class="d-grid">
+                           <button class="btn bg-btn" type="button">
+                              Add to Cart
+                           </button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-3">
+                  <div class="product-collections">
+                     <div class="product-card shadow-sm image-card">
+                        <div class="image-wrapper">
+                           <div class="tag-card bg-danger shadow-sm text-white">
+                              Out of stock
+                           </div>
+                           <img
+                              src="images/pro-9.png"
+                              alt="collections"
+                              class="img-fluid"
+                           />
+                        </div>
+                        <div class="product-details py-3">
+                           <div class="pro-name">Product One</div>
+                           <div class="pro-price">
+                              <p class="text-uppercase mb-0">
+                                 <span class="fw-bold new-price"
+                                    ><i class="bi bi-currency-rupee"></i
+                                    >1799.00</span
+                                 >
+                                 <span class="old-price"
+                                    ><i class="bi bi-currency-rupee"></i
+                                    >999.00</span
+                                 >
+                              </p>
+                           </div>
+                        </div>
+                        <div class="d-grid">
+                           <button class="btn bg-btn disabled" type="button">
+                              Add to Cart
+                           </button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-12 text-center">
+                  <button type="button" class="btn btn-dark text-white mt-3">
+                     Explore All
+                  </button>
+               </div>
+            </div>
+         </div>
+         <section class="find-style">
+            <div class="container">
+               <div class="row">
+                  <div class="col-12 text-center mb-5">
+                     <h1 class="product-title main-head">Find Your Style</h1>
+                     <div class="head-border-line"></div>
+                  </div>
+                  <div class="col-lg-12">
+                     <div class="pro-desc-tab find-style-tab">
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                           <li class="nav-item" role="presentation">
+                              <button
+                                 class="nav-link text-secondary active"
+                                 id="f-tab1"
+                                 data-bs-toggle="tab"
+                                 data-bs-target="#tab1"
+                                 type="button"
+                                 role="tab"
+                                 aria-controls="home"
+                                 aria-selected="true"
+                              >
+                                 Anti-Tarnish
+                              </button>
+                           </li>
+                           <li class="nav-item" role="presentation">
+                              <button
+                                 class="nav-link text-secondary"
+                                 id="f-tab2"
+                                 data-bs-toggle="tab"
+                                 data-bs-target="#tab2"
+                                 type="button"
+                                 role="tab"
+                                 aria-controls="profile"
+                                 aria-selected="false"
+                              >
+                                 Accessories
+                              </button>
+                           </li>
+                           <li class="nav-item" role="presentation">
+                              <button
+                                 class="nav-link text-secondary"
+                                 id="f-tab3"
+                                 data-bs-toggle="tab"
+                                 data-bs-target="#tab3"
+                                 type="button"
+                                 role="tab"
+                                 aria-controls="contact"
+                                 aria-selected="false"
+                              >
+                                 Necklaces
+                              </button>
+                           </li>
+                           <li class="nav-item" role="presentation">
+                              <button
+                                 class="nav-link text-secondary"
+                                 id="f-tab4"
+                                 data-bs-toggle="tab"
+                                 data-bs-target="#tab4"
+                                 type="button"
+                                 role="tab"
+                                 aria-controls="contact"
+                                 aria-selected="false"
+                              >
+                                 Earrings
+                              </button>
+                           </li>
+                           <li class="nav-item" role="presentation">
+                              <button
+                                 class="nav-link text-secondary"
+                                 id="f-tab5"
+                                 data-bs-toggle="tab"
+                                 data-bs-target="#tab5"
+                                 type="button"
+                                 role="tab"
+                                 aria-controls="contact"
+                                 aria-selected="false"
+                              >
+                                 Bridal Set
+                              </button>
+                           </li>
+                        </ul>
+                        <div class="tab-content" id="myTabContent">
+                           <div
+                              class="tab-pane fade active show"
+                              id="tab1"
+                              role="tabpanel"
+                              aria-labelledby="f-tab1"
+                           >
+                              <div class="p-3 my-4">
+                                 <div class="row g-4">
+                                    <div class="col-lg-3">
+                                       <div class="product-collections">
+                                          <div
+                                             class="product-card shadow-sm image-card"
+                                          >
+                                             <div class="image-wrapper">
+                                                <div
+                                                   class="tag-card new shadow-sm"
+                                                >
+                                                   30% Off
+                                                </div>
+                                                <img
+                                                   src="images/pro-6.png"
+                                                   alt="collections"
+                                                   class="img-fluid"
+                                                />
+                                             </div>
+                                             <div class="product-details py-3">
+                                                <div class="pro-name">
+                                                   Product One
+                                                </div>
+                                                <div class="pro-price">
+                                                   <p
+                                                      class="text-uppercase mb-0"
+                                                   >
+                                                      <span
+                                                         class="fw-bold new-price"
+                                                         ><i
+                                                            class="bi bi-currency-rupee"
+                                                         ></i
+                                                         >799.00</span
+                                                      >
+                                                      <span class="old-price"
+                                                         ><i
+                                                            class="bi bi-currency-rupee"
+                                                         ></i
+                                                         >999.00</span
+                                                      >
+                                                   </p>
+                                                </div>
+                                             </div>
+                                             <div class="d-grid">
+                                                <button
+                                                   class="btn bg-btn"
+                                                   type="button"
+                                                >
+                                                   Add to Cart
+                                                </button>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="col-lg-3">
+                                       <div class="product-collections">
+                                          <div
+                                             class="product-card shadow-sm image-card"
+                                          >
+                                             <div class="image-wrapper">
+                                                <div
+                                                   class="tag-card bg-danger shadow-sm text-white"
+                                                >
+                                                   Out of stock
+                                                </div>
+                                                <img
+                                                   src="images/pro-7.png"
+                                                   alt="collections"
+                                                   class="img-fluid"
+                                                />
+                                             </div>
+                                             <div class="product-details py-3">
+                                                <div class="pro-name">
+                                                   Product One
+                                                </div>
+                                                <div class="pro-price">
+                                                   <p
+                                                      class="text-uppercase mb-0"
+                                                   >
+                                                      <span
+                                                         class="fw-bold new-price"
+                                                         ><i
+                                                            class="bi bi-currency-rupee"
+                                                         ></i
+                                                         >799.00</span
+                                                      >
+                                                      <span class="old-price"
+                                                         ><i
+                                                            class="bi bi-currency-rupee"
+                                                         ></i
+                                                         >999.00</span
+                                                      >
+                                                   </p>
+                                                </div>
+                                             </div>
+                                             <div class="d-grid">
+                                                <button
+                                                   class="btn bg-btn disabled"
+                                                   type="button"
+                                                >
+                                                   Add to Cart
+                                                </button>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="col-lg-3">
+                                       <div class="product-collections">
+                                          <div
+                                             class="product-card shadow-sm image-card"
+                                          >
+                                             <div class="image-wrapper">
+                                                <div
+                                                   class="tag-card new shadow-sm"
+                                                >
+                                                   50% Off
+                                                </div>
+                                                <img
+                                                   src="images/pro-8.png"
+                                                   alt="collections"
+                                                   class="img-fluid"
+                                                />
+                                             </div>
+                                             <div class="product-details py-3">
+                                                <div class="pro-name">
+                                                   Product One
+                                                </div>
+                                                <div class="pro-price">
+                                                   <p
+                                                      class="text-uppercase mb-0"
+                                                   >
+                                                      <span
+                                                         class="fw-bold new-price"
+                                                         ><i
+                                                            class="bi bi-currency-rupee"
+                                                         ></i
+                                                         >2799.00</span
+                                                      >
+                                                      <span class="old-price"
+                                                         ><i
+                                                            class="bi bi-currency-rupee"
+                                                         ></i
+                                                         >999.00</span
+                                                      >
+                                                   </p>
+                                                </div>
+                                             </div>
+                                             <div class="d-grid">
+                                                <button
+                                                   class="btn bg-btn"
+                                                   type="button"
+                                                >
+                                                   Add to Cart
+                                                </button>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="col-lg-3">
+                                       <div class="product-collections">
+                                          <div
+                                             class="product-card shadow-sm image-card"
+                                          >
+                                             <div class="image-wrapper">
+                                                <div
+                                                   class="tag-card bg-danger shadow-sm text-white"
+                                                >
+                                                   Out of stock
+                                                </div>
+                                                <img
+                                                   src="images/pro-9.png"
+                                                   alt="collections"
+                                                   class="img-fluid"
+                                                />
+                                             </div>
+                                             <div class="product-details py-3">
+                                                <div class="pro-name">
+                                                   Product One
+                                                </div>
+                                                <div class="pro-price">
+                                                   <p
+                                                      class="text-uppercase mb-0"
+                                                   >
+                                                      <span
+                                                         class="fw-bold new-price"
+                                                         ><i
+                                                            class="bi bi-currency-rupee"
+                                                         ></i
+                                                         >1799.00</span
+                                                      >
+                                                      <span class="old-price"
+                                                         ><i
+                                                            class="bi bi-currency-rupee"
+                                                         ></i
+                                                         >999.00</span
+                                                      >
+                                                   </p>
+                                                </div>
+                                             </div>
+                                             <div class="d-grid">
+                                                <button
+                                                   class="btn bg-btn disabled"
+                                                   type="button"
+                                                >
+                                                   Add to Cart
+                                                </button>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="col-lg-3">
+                                       <div class="product-collections">
+                                          <div
+                                             class="product-card shadow-sm image-card"
+                                          >
+                                             <div class="image-wrapper">
+                                                <div
+                                                   class="tag-card bg-danger shadow-sm text-white"
+                                                >
+                                                   Out of stock
+                                                </div>
+                                                <img
+                                                   src="images/pro-9.png"
+                                                   alt="collections"
+                                                   class="img-fluid"
+                                                />
+                                             </div>
+                                             <div class="product-details py-3">
+                                                <div class="pro-name">
+                                                   Product One
+                                                </div>
+                                                <div class="pro-price">
+                                                   <p
+                                                      class="text-uppercase mb-0"
+                                                   >
+                                                      <span
+                                                         class="fw-bold new-price"
+                                                         ><i
+                                                            class="bi bi-currency-rupee"
+                                                         ></i
+                                                         >1799.00</span
+                                                      >
+                                                      <span class="old-price"
+                                                         ><i
+                                                            class="bi bi-currency-rupee"
+                                                         ></i
+                                                         >999.00</span
+                                                      >
+                                                   </p>
+                                                </div>
+                                             </div>
+                                             <div class="d-grid">
+                                                <button
+                                                   class="btn bg-btn disabled"
+                                                   type="button"
+                                                >
+                                                   Add to Cart
+                                                </button>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="col-lg-3">
+                                       <div class="product-collections">
+                                          <div
+                                             class="product-card shadow-sm image-card"
+                                          >
+                                             <div class="image-wrapper">
+                                                <div
+                                                   class="tag-card bg-danger shadow-sm text-white"
+                                                >
+                                                   Out of stock
+                                                </div>
+                                                <img
+                                                   src="images/pro-6.png"
+                                                   alt="collections"
+                                                   class="img-fluid"
+                                                />
+                                             </div>
+                                             <div class="product-details py-3">
+                                                <div class="pro-name">
+                                                   Product One
+                                                </div>
+                                                <div class="pro-price">
+                                                   <p
+                                                      class="text-uppercase mb-0"
+                                                   >
+                                                      <span
+                                                         class="fw-bold new-price"
+                                                         ><i
+                                                            class="bi bi-currency-rupee"
+                                                         ></i
+                                                         >1799.00</span
+                                                      >
+                                                      <span class="old-price"
+                                                         ><i
+                                                            class="bi bi-currency-rupee"
+                                                         ></i
+                                                         >999.00</span
+                                                      >
+                                                   </p>
+                                                </div>
+                                             </div>
+                                             <div class="d-grid">
+                                                <button
+                                                   class="btn bg-btn disabled"
+                                                   type="button"
+                                                >
+                                                   Add to Cart
+                                                </button>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="col-lg-3">
+                                       <div class="product-collections">
+                                          <div
+                                             class="product-card shadow-sm image-card"
+                                          >
+                                             <div class="image-wrapper">
+                                                <div
+                                                   class="tag-card bg-danger shadow-sm text-white"
+                                                >
+                                                   Out of stock
+                                                </div>
+                                                <img
+                                                   src="images/pro-9.png"
+                                                   alt="collections"
+                                                   class="img-fluid"
+                                                />
+                                             </div>
+                                             <div class="product-details py-3">
+                                                <div class="pro-name">
+                                                   Product One
+                                                </div>
+                                                <div class="pro-price">
+                                                   <p
+                                                      class="text-uppercase mb-0"
+                                                   >
+                                                      <span
+                                                         class="fw-bold new-price"
+                                                         ><i
+                                                            class="bi bi-currency-rupee"
+                                                         ></i
+                                                         >1799.00</span
+                                                      >
+                                                      <span class="old-price"
+                                                         ><i
+                                                            class="bi bi-currency-rupee"
+                                                         ></i
+                                                         >999.00</span
+                                                      >
+                                                   </p>
+                                                </div>
+                                             </div>
+                                             <div class="d-grid">
+                                                <button
+                                                   class="btn bg-btn disabled"
+                                                   type="button"
+                                                >
+                                                   Add to Cart
+                                                </button>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="col-lg-3">
+                                       <div class="product-collections">
+                                          <div
+                                             class="product-card shadow-sm image-card"
+                                          >
+                                             <div class="image-wrapper">
+                                                <div
+                                                   class="tag-card bg-danger shadow-sm text-white"
+                                                >
+                                                   Out of stock
+                                                </div>
+                                                <img
+                                                   src="images/pro-7.png"
+                                                   alt="collections"
+                                                   class="img-fluid"
+                                                />
+                                             </div>
+                                             <div class="product-details py-3">
+                                                <div class="pro-name">
+                                                   Product One
+                                                </div>
+                                                <div class="pro-price">
+                                                   <p
+                                                      class="text-uppercase mb-0"
+                                                   >
+                                                      <span
+                                                         class="fw-bold new-price"
+                                                         ><i
+                                                            class="bi bi-currency-rupee"
+                                                         ></i
+                                                         >1799.00</span
+                                                      >
+                                                      <span class="old-price"
+                                                         ><i
+                                                            class="bi bi-currency-rupee"
+                                                         ></i
+                                                         >999.00</span
+                                                      >
+                                                   </p>
+                                                </div>
+                                             </div>
+                                             <div class="d-grid">
+                                                <button
+                                                   class="btn bg-btn disabled"
+                                                   type="button"
+                                                >
+                                                   Add to Cart
+                                                </button>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <!-- tab 1 -->
+                           <div
+                              class="tab-pane fade"
+                              id="tab2"
+                              role="tabpanel"
+                              aria-labelledby="f-tab2"
+                           >
+                              <div class="p-3 my-4">
+                                 <div class="row g-4">
+                                    <div class="col-lg-3">
+                                       <div class="product-collections">
+                                          <div
+                                             class="product-card shadow-sm image-card"
+                                          >
+                                             <div class="image-wrapper">
+                                                <div
+                                                   class="tag-card new shadow-sm"
+                                                >
+                                                   30% Off
+                                                </div>
+                                                <img
+                                                   src="images/pro-6.png"
+                                                   alt="collections"
+                                                   class="img-fluid"
+                                                />
+                                             </div>
+                                             <div class="product-details py-3">
+                                                <div class="pro-name">
+                                                   Product One
+                                                </div>
+                                                <div class="pro-price">
+                                                   <p
+                                                      class="text-uppercase mb-0"
+                                                   >
+                                                      <span
+                                                         class="fw-bold new-price"
+                                                         ><i
+                                                            class="bi bi-currency-rupee"
+                                                         ></i
+                                                         >799.00</span
+                                                      >
+                                                      <span class="old-price"
+                                                         ><i
+                                                            class="bi bi-currency-rupee"
+                                                         ></i
+                                                         >999.00</span
+                                                      >
+                                                   </p>
+                                                </div>
+                                             </div>
+                                             <div class="d-grid">
+                                                <button
+                                                   class="btn bg-btn"
+                                                   type="button"
+                                                >
+                                                   Add to Cart
+                                                </button>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="col-lg-3">
+                                       <div class="product-collections">
+                                          <div
+                                             class="product-card shadow-sm image-card"
+                                          >
+                                             <div class="image-wrapper">
+                                                <div
+                                                   class="tag-card bg-danger shadow-sm text-white"
+                                                >
+                                                   Out of stock
+                                                </div>
+                                                <img
+                                                   src="images/pro-7.png"
+                                                   alt="collections"
+                                                   class="img-fluid"
+                                                />
+                                             </div>
+                                             <div class="product-details py-3">
+                                                <div class="pro-name">
+                                                   Product One
+                                                </div>
+                                                <div class="pro-price">
+                                                   <p
+                                                      class="text-uppercase mb-0"
+                                                   >
+                                                      <span
+                                                         class="fw-bold new-price"
+                                                         ><i
+                                                            class="bi bi-currency-rupee"
+                                                         ></i
+                                                         >799.00</span
+                                                      >
+                                                      <span class="old-price"
+                                                         ><i
+                                                            class="bi bi-currency-rupee"
+                                                         ></i
+                                                         >999.00</span
+                                                      >
+                                                   </p>
+                                                </div>
+                                             </div>
+                                             <div class="d-grid">
+                                                <button
+                                                   class="btn bg-btn disabled"
+                                                   type="button"
+                                                >
+                                                   Add to Cart
+                                                </button>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="col-lg-3">
+                                       <div class="product-collections">
+                                          <div
+                                             class="product-card shadow-sm image-card"
+                                          >
+                                             <div class="image-wrapper">
+                                                <div
+                                                   class="tag-card new shadow-sm"
+                                                >
+                                                   50% Off
+                                                </div>
+                                                <img
+                                                   src="images/pro-8.png"
+                                                   alt="collections"
+                                                   class="img-fluid"
+                                                />
+                                             </div>
+                                             <div class="product-details py-3">
+                                                <div class="pro-name">
+                                                   Product One
+                                                </div>
+                                                <div class="pro-price">
+                                                   <p
+                                                      class="text-uppercase mb-0"
+                                                   >
+                                                      <span
+                                                         class="fw-bold new-price"
+                                                         ><i
+                                                            class="bi bi-currency-rupee"
+                                                         ></i
+                                                         >2799.00</span
+                                                      >
+                                                      <span class="old-price"
+                                                         ><i
+                                                            class="bi bi-currency-rupee"
+                                                         ></i
+                                                         >999.00</span
+                                                      >
+                                                   </p>
+                                                </div>
+                                             </div>
+                                             <div class="d-grid">
+                                                <button
+                                                   class="btn bg-btn"
+                                                   type="button"
+                                                >
+                                                   Add to Cart
+                                                </button>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="col-lg-3">
+                                       <div class="product-collections">
+                                          <div
+                                             class="product-card shadow-sm image-card"
+                                          >
+                                             <div class="image-wrapper">
+                                                <div
+                                                   class="tag-card bg-danger shadow-sm text-white"
+                                                >
+                                                   Out of stock
+                                                </div>
+                                                <img
+                                                   src="images/pro-9.png"
+                                                   alt="collections"
+                                                   class="img-fluid"
+                                                />
+                                             </div>
+                                             <div class="product-details py-3">
+                                                <div class="pro-name">
+                                                   Product One
+                                                </div>
+                                                <div class="pro-price">
+                                                   <p
+                                                      class="text-uppercase mb-0"
+                                                   >
+                                                      <span
+                                                         class="fw-bold new-price"
+                                                         ><i
+                                                            class="bi bi-currency-rupee"
+                                                         ></i
+                                                         >1799.00</span
+                                                      >
+                                                      <span class="old-price"
+                                                         ><i
+                                                            class="bi bi-currency-rupee"
+                                                         ></i
+                                                         >999.00</span
+                                                      >
+                                                   </p>
+                                                </div>
+                                             </div>
+                                             <div class="d-grid">
+                                                <button
+                                                   class="btn bg-btn disabled"
+                                                   type="button"
+                                                >
+                                                   Add to Cart
+                                                </button>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <!-- tab 2 -->
+                           <div
+                              class="tab-pane fade"
+                              id="tab3"
+                              role="tabpanel"
+                              aria-labelledby="f-tab3"
+                           >
+                              <div class="p-3 my-4">
+                                 <div class="row g-4">
+                                    <div class="col-lg-3">
+                                       <div class="product-collections">
+                                          <div
+                                             class="product-card shadow-sm image-card"
+                                          >
+                                             <div class="image-wrapper">
+                                                <div
+                                                   class="tag-card new shadow-sm"
+                                                >
+                                                   30% Off
+                                                </div>
+                                                <img
+                                                   src="images/pro-6.png"
+                                                   alt="collections"
+                                                   class="img-fluid"
+                                                />
+                                             </div>
+                                             <div class="product-details py-3">
+                                                <div class="pro-name">
+                                                   Product One
+                                                </div>
+                                                <div class="pro-price">
+                                                   <p
+                                                      class="text-uppercase mb-0"
+                                                   >
+                                                      <span
+                                                         class="fw-bold new-price"
+                                                         ><i
+                                                            class="bi bi-currency-rupee"
+                                                         ></i
+                                                         >799.00</span
+                                                      >
+                                                      <span class="old-price"
+                                                         ><i
+                                                            class="bi bi-currency-rupee"
+                                                         ></i
+                                                         >999.00</span
+                                                      >
+                                                   </p>
+                                                </div>
+                                             </div>
+                                             <div class="d-grid">
+                                                <button
+                                                   class="btn bg-btn"
+                                                   type="button"
+                                                >
+                                                   Add to Cart
+                                                </button>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="col-lg-3">
+                                       <div class="product-collections">
+                                          <div
+                                             class="product-card shadow-sm image-card"
+                                          >
+                                             <div class="image-wrapper">
+                                                <div
+                                                   class="tag-card bg-danger shadow-sm text-white"
+                                                >
+                                                   Out of stock
+                                                </div>
+                                                <img
+                                                   src="images/pro-7.png"
+                                                   alt="collections"
+                                                   class="img-fluid"
+                                                />
+                                             </div>
+                                             <div class="product-details py-3">
+                                                <div class="pro-name">
+                                                   Product One
+                                                </div>
+                                                <div class="pro-price">
+                                                   <p
+                                                      class="text-uppercase mb-0"
+                                                   >
+                                                      <span
+                                                         class="fw-bold new-price"
+                                                         ><i
+                                                            class="bi bi-currency-rupee"
+                                                         ></i
+                                                         >799.00</span
+                                                      >
+                                                      <span class="old-price"
+                                                         ><i
+                                                            class="bi bi-currency-rupee"
+                                                         ></i
+                                                         >999.00</span
+                                                      >
+                                                   </p>
+                                                </div>
+                                             </div>
+                                             <div class="d-grid">
+                                                <button
+                                                   class="btn bg-btn disabled"
+                                                   type="button"
+                                                >
+                                                   Add to Cart
+                                                </button>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="col-lg-3">
+                                       <div class="product-collections">
+                                          <div
+                                             class="product-card shadow-sm image-card"
+                                          >
+                                             <div class="image-wrapper">
+                                                <div
+                                                   class="tag-card new shadow-sm"
+                                                >
+                                                   50% Off
+                                                </div>
+                                                <img
+                                                   src="images/pro-8.png"
+                                                   alt="collections"
+                                                   class="img-fluid"
+                                                />
+                                             </div>
+                                             <div class="product-details py-3">
+                                                <div class="pro-name">
+                                                   Product One
+                                                </div>
+                                                <div class="pro-price">
+                                                   <p
+                                                      class="text-uppercase mb-0"
+                                                   >
+                                                      <span
+                                                         class="fw-bold new-price"
+                                                         ><i
+                                                            class="bi bi-currency-rupee"
+                                                         ></i
+                                                         >2799.00</span
+                                                      >
+                                                      <span class="old-price"
+                                                         ><i
+                                                            class="bi bi-currency-rupee"
+                                                         ></i
+                                                         >999.00</span
+                                                      >
+                                                   </p>
+                                                </div>
+                                             </div>
+                                             <div class="d-grid">
+                                                <button
+                                                   class="btn bg-btn"
+                                                   type="button"
+                                                >
+                                                   Add to Cart
+                                                </button>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="col-lg-3">
+                                       <div class="product-collections">
+                                          <div
+                                             class="product-card shadow-sm image-card"
+                                          >
+                                             <div class="image-wrapper">
+                                                <div
+                                                   class="tag-card bg-danger shadow-sm text-white"
+                                                >
+                                                   Out of stock
+                                                </div>
+                                                <img
+                                                   src="images/pro-9.png"
+                                                   alt="collections"
+                                                   class="img-fluid"
+                                                />
+                                             </div>
+                                             <div class="product-details py-3">
+                                                <div class="pro-name">
+                                                   Product One
+                                                </div>
+                                                <div class="pro-price">
+                                                   <p
+                                                      class="text-uppercase mb-0"
+                                                   >
+                                                      <span
+                                                         class="fw-bold new-price"
+                                                         ><i
+                                                            class="bi bi-currency-rupee"
+                                                         ></i
+                                                         >1799.00</span
+                                                      >
+                                                      <span class="old-price"
+                                                         ><i
+                                                            class="bi bi-currency-rupee"
+                                                         ></i
+                                                         >999.00</span
+                                                      >
+                                                   </p>
+                                                </div>
+                                             </div>
+                                             <div class="d-grid">
+                                                <button
+                                                   class="btn bg-btn disabled"
+                                                   type="button"
+                                                >
+                                                   Add to Cart
+                                                </button>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <!-- tab 3 -->
+                           <div
+                              class="tab-pane fade"
+                              id="tab4"
+                              role="tabpanel"
+                              aria-labelledby="f-tab4"
+                           >
+                              <div class="p-3 my-4">
+                                 <div class="row g-4">
+                                    <div class="col-lg-3">
+                                       <div class="product-collections">
+                                          <div
+                                             class="product-card shadow-sm image-card"
+                                          >
+                                             <div class="image-wrapper">
+                                                <div
+                                                   class="tag-card new shadow-sm"
+                                                >
+                                                   30% Off
+                                                </div>
+                                                <img
+                                                   src="images/pro-6.png"
+                                                   alt="collections"
+                                                   class="img-fluid"
+                                                />
+                                             </div>
+                                             <div class="product-details py-3">
+                                                <div class="pro-name">
+                                                   Product One
+                                                </div>
+                                                <div class="pro-price">
+                                                   <p
+                                                      class="text-uppercase mb-0"
+                                                   >
+                                                      <span
+                                                         class="fw-bold new-price"
+                                                         ><i
+                                                            class="bi bi-currency-rupee"
+                                                         ></i
+                                                         >799.00</span
+                                                      >
+                                                      <span class="old-price"
+                                                         ><i
+                                                            class="bi bi-currency-rupee"
+                                                         ></i
+                                                         >999.00</span
+                                                      >
+                                                   </p>
+                                                </div>
+                                             </div>
+                                             <div class="d-grid">
+                                                <button
+                                                   class="btn bg-btn"
+                                                   type="button"
+                                                >
+                                                   Add to Cart
+                                                </button>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="col-lg-3">
+                                       <div class="product-collections">
+                                          <div
+                                             class="product-card shadow-sm image-card"
+                                          >
+                                             <div class="image-wrapper">
+                                                <div
+                                                   class="tag-card bg-danger shadow-sm text-white"
+                                                >
+                                                   Out of stock
+                                                </div>
+                                                <img
+                                                   src="images/pro-7.png"
+                                                   alt="collections"
+                                                   class="img-fluid"
+                                                />
+                                             </div>
+                                             <div class="product-details py-3">
+                                                <div class="pro-name">
+                                                   Product One
+                                                </div>
+                                                <div class="pro-price">
+                                                   <p
+                                                      class="text-uppercase mb-0"
+                                                   >
+                                                      <span
+                                                         class="fw-bold new-price"
+                                                         ><i
+                                                            class="bi bi-currency-rupee"
+                                                         ></i
+                                                         >799.00</span
+                                                      >
+                                                      <span class="old-price"
+                                                         ><i
+                                                            class="bi bi-currency-rupee"
+                                                         ></i
+                                                         >999.00</span
+                                                      >
+                                                   </p>
+                                                </div>
+                                             </div>
+                                             <div class="d-grid">
+                                                <button
+                                                   class="btn bg-btn disabled"
+                                                   type="button"
+                                                >
+                                                   Add to Cart
+                                                </button>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="col-lg-3">
+                                       <div class="product-collections">
+                                          <div
+                                             class="product-card shadow-sm image-card"
+                                          >
+                                             <div class="image-wrapper">
+                                                <div
+                                                   class="tag-card new shadow-sm"
+                                                >
+                                                   50% Off
+                                                </div>
+                                                <img
+                                                   src="images/pro-8.png"
+                                                   alt="collections"
+                                                   class="img-fluid"
+                                                />
+                                             </div>
+                                             <div class="product-details py-3">
+                                                <div class="pro-name">
+                                                   Product One
+                                                </div>
+                                                <div class="pro-price">
+                                                   <p
+                                                      class="text-uppercase mb-0"
+                                                   >
+                                                      <span
+                                                         class="fw-bold new-price"
+                                                         ><i
+                                                            class="bi bi-currency-rupee"
+                                                         ></i
+                                                         >2799.00</span
+                                                      >
+                                                      <span class="old-price"
+                                                         ><i
+                                                            class="bi bi-currency-rupee"
+                                                         ></i
+                                                         >999.00</span
+                                                      >
+                                                   </p>
+                                                </div>
+                                             </div>
+                                             <div class="d-grid">
+                                                <button
+                                                   class="btn bg-btn"
+                                                   type="button"
+                                                >
+                                                   Add to Cart
+                                                </button>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="col-lg-3">
+                                       <div class="product-collections">
+                                          <div
+                                             class="product-card shadow-sm image-card"
+                                          >
+                                             <div class="image-wrapper">
+                                                <div
+                                                   class="tag-card bg-danger shadow-sm text-white"
+                                                >
+                                                   Out of stock
+                                                </div>
+                                                <img
+                                                   src="images/pro-9.png"
+                                                   alt="collections"
+                                                   class="img-fluid"
+                                                />
+                                             </div>
+                                             <div class="product-details py-3">
+                                                <div class="pro-name">
+                                                   Product One
+                                                </div>
+                                                <div class="pro-price">
+                                                   <p
+                                                      class="text-uppercase mb-0"
+                                                   >
+                                                      <span
+                                                         class="fw-bold new-price"
+                                                         ><i
+                                                            class="bi bi-currency-rupee"
+                                                         ></i
+                                                         >1799.00</span
+                                                      >
+                                                      <span class="old-price"
+                                                         ><i
+                                                            class="bi bi-currency-rupee"
+                                                         ></i
+                                                         >999.00</span
+                                                      >
+                                                   </p>
+                                                </div>
+                                             </div>
+                                             <div class="d-grid">
+                                                <button
+                                                   class="btn bg-btn disabled"
+                                                   type="button"
+                                                >
+                                                   Add to Cart
+                                                </button>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <!-- tab 4 -->
+                           <div
+                              class="tab-pane fade"
+                              id="tab5"
+                              role="tabpanel"
+                              aria-labelledby="f-tab5"
+                           >
+                              <div class="p-3 my-4">
+                                 <div class="row g-4">
+                                    <div class="col-lg-3">
+                                       <div class="product-collections">
+                                          <div
+                                             class="product-card shadow-sm image-card"
+                                          >
+                                             <div class="image-wrapper">
+                                                <div
+                                                   class="tag-card new shadow-sm"
+                                                >
+                                                   30% Off
+                                                </div>
+                                                <img
+                                                   src="images/pro-6.png"
+                                                   alt="collections"
+                                                   class="img-fluid"
+                                                />
+                                             </div>
+                                             <div class="product-details py-3">
+                                                <div class="pro-name">
+                                                   Product One
+                                                </div>
+                                                <div class="pro-price">
+                                                   <p
+                                                      class="text-uppercase mb-0"
+                                                   >
+                                                      <span
+                                                         class="fw-bold new-price"
+                                                         ><i
+                                                            class="bi bi-currency-rupee"
+                                                         ></i
+                                                         >799.00</span
+                                                      >
+                                                      <span class="old-price"
+                                                         ><i
+                                                            class="bi bi-currency-rupee"
+                                                         ></i
+                                                         >999.00</span
+                                                      >
+                                                   </p>
+                                                </div>
+                                             </div>
+                                             <div class="d-grid">
+                                                <button
+                                                   class="btn bg-btn"
+                                                   type="button"
+                                                >
+                                                   Add to Cart
+                                                </button>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="col-lg-3">
+                                       <div class="product-collections">
+                                          <div
+                                             class="product-card shadow-sm image-card"
+                                          >
+                                             <div class="image-wrapper">
+                                                <div
+                                                   class="tag-card bg-danger shadow-sm text-white"
+                                                >
+                                                   Out of stock
+                                                </div>
+                                                <img
+                                                   src="images/pro-7.png"
+                                                   alt="collections"
+                                                   class="img-fluid"
+                                                />
+                                             </div>
+                                             <div class="product-details py-3">
+                                                <div class="pro-name">
+                                                   Product One
+                                                </div>
+                                                <div class="pro-price">
+                                                   <p
+                                                      class="text-uppercase mb-0"
+                                                   >
+                                                      <span
+                                                         class="fw-bold new-price"
+                                                         ><i
+                                                            class="bi bi-currency-rupee"
+                                                         ></i
+                                                         >799.00</span
+                                                      >
+                                                      <span class="old-price"
+                                                         ><i
+                                                            class="bi bi-currency-rupee"
+                                                         ></i
+                                                         >999.00</span
+                                                      >
+                                                   </p>
+                                                </div>
+                                             </div>
+                                             <div class="d-grid">
+                                                <button
+                                                   class="btn bg-btn disabled"
+                                                   type="button"
+                                                >
+                                                   Add to Cart
+                                                </button>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="col-lg-3">
+                                       <div class="product-collections">
+                                          <div
+                                             class="product-card shadow-sm image-card"
+                                          >
+                                             <div class="image-wrapper">
+                                                <div
+                                                   class="tag-card new shadow-sm"
+                                                >
+                                                   50% Off
+                                                </div>
+                                                <img
+                                                   src="images/pro-8.png"
+                                                   alt="collections"
+                                                   class="img-fluid"
+                                                />
+                                             </div>
+                                             <div class="product-details py-3">
+                                                <div class="pro-name">
+                                                   Product One
+                                                </div>
+                                                <div class="pro-price">
+                                                   <p
+                                                      class="text-uppercase mb-0"
+                                                   >
+                                                      <span
+                                                         class="fw-bold new-price"
+                                                         ><i
+                                                            class="bi bi-currency-rupee"
+                                                         ></i
+                                                         >2799.00</span
+                                                      >
+                                                      <span class="old-price"
+                                                         ><i
+                                                            class="bi bi-currency-rupee"
+                                                         ></i
+                                                         >999.00</span
+                                                      >
+                                                   </p>
+                                                </div>
+                                             </div>
+                                             <div class="d-grid">
+                                                <button
+                                                   class="btn bg-btn"
+                                                   type="button"
+                                                >
+                                                   Add to Cart
+                                                </button>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="col-lg-3">
+                                       <div class="product-collections">
+                                          <div
+                                             class="product-card shadow-sm image-card"
+                                          >
+                                             <div class="image-wrapper">
+                                                <div
+                                                   class="tag-card bg-danger shadow-sm text-white"
+                                                >
+                                                   Out of stock
+                                                </div>
+                                                <img
+                                                   src="images/pro-9.png"
+                                                   alt="collections"
+                                                   class="img-fluid"
+                                                />
+                                             </div>
+                                             <div class="product-details py-3">
+                                                <div class="pro-name">
+                                                   Product One
+                                                </div>
+                                                <div class="pro-price">
+                                                   <p
+                                                      class="text-uppercase mb-0"
+                                                   >
+                                                      <span
+                                                         class="fw-bold new-price"
+                                                         ><i
+                                                            class="bi bi-currency-rupee"
+                                                         ></i
+                                                         >1799.00</span
+                                                      >
+                                                      <span class="old-price"
+                                                         ><i
+                                                            class="bi bi-currency-rupee"
+                                                         ></i
+                                                         >999.00</span
+                                                      >
+                                                   </p>
+                                                </div>
+                                             </div>
+                                             <div class="d-grid">
+                                                <button
+                                                   class="btn bg-btn disabled"
+                                                   type="button"
+                                                >
+                                                   Add to Cart
+                                                </button>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <!-- tab 5 -->
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </main>
+      <footer class="footer pt-lg-5">
+         <div class="container footer-bottom-line">
+            <div class="row footer-inner">
+               <div class="col-lg-4 pe-lg-5">
+                  <div class="footer-about pt-lg-5 text-center">
+                     <div class="footer-logo">
+                        <img
+                           src="images/logo.png"
+                           alt="Logo"
+                           class="footerlogo img-fluid"
+                        />
+                     </div>
+                     <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Curabitur dui ante, molestie vitae nisi eu, dictum
+                        interdum mi. Aenean congue porta posuere. Phasellus
+                        rutrum non lorem ut faucibus. Mauris vel lacinia nibh.
+                     </p>
+                  </div>
+               </div>
+               <div class="col-lg-3 col-6">
+                  <div class="footer-menu pt-5">
+                     <h5 class="mb-3">Quick Links</h5>
+                     <ul class="list-unstyled">
+                        <li>
+                           <span
+                              ><i class="bi bi-chevron-double-right"></i></span
+                           ><a href="index.html">Home</a>
+                        </li>
+                        <li>
+                           <span
+                              ><i class="bi bi-chevron-double-right"></i></span
+                           ><a href="aboutus.html">About Us</a>
+                        </li>
+                        <li>
+                           <span
+                              ><i class="bi bi-chevron-double-right"></i></span
+                           ><a href="services.html">New Arrivals</a>
+                        </li>
+                        <li>
+                           <span
+                              ><i class="bi bi-chevron-double-right"></i></span
+                           ><a href="career.html">Products</a>
+                        </li>
+                        <li>
+                           <span
+                              ><i class="bi bi-chevron-double-right"></i></span
+                           ><a href="contactus.html">Contact Us</a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-lg-2 col-6">
+                  <div class="footer-menu pt-5">
+                     <h5 class="mb-3">INFORMATION</h5>
+                     <ul class="list-unstyled">
+                        <li>
+                           <span
+                              ><i class="bi bi-chevron-double-right"></i></span
+                           ><a href="index.html">about us</a>
+                        </li>
+                        <li>
+                           <span
+                              ><i class="bi bi-chevron-double-right"></i></span
+                           ><a href="privacy-policy.html">privacy policy</a>
+                        </li>
+
+                        <li>
+                           <span
+                              ><i class="bi bi-chevron-double-right"></i></span
+                           ><a href="shipping.html">shipping policy</a>
+                        </li>
+                        <li>
+                           <span
+                              ><i class="bi bi-chevron-double-right"></i></span
+                           ><a href="contactus.html">Contact Us</a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-lg-3">
+                  <div class="footer-menu social-list pt-5">
+                     <h5 class="mb-3">Follow Us</h5>
+                     <span class="flex-center"
+                        ><a href="#"><i class="bi bi-facebook"></i></a
+                     ></span>
+                     <span class="flex-center"
+                        ><a href="#"><i class="bi bi-instagram"></i></a
+                     ></span>
+                     <span class="flex-center"
+                        ><a href="#"><i class="bi bi-twitter-x"></i></a
+                     ></span>
+                     <span class="flex-center"
+                        ><a href="#"><i class="bi bi-linkedin"></i></a
+                     ></span>
+                     <span class="flex-center"
+                        ><a href="#"><i class="bi bi-youtube"></i></a
+                     ></span>
+                  </div>
+               </div>
+            </div>
+            <div class="container py-5">
+               <div class="row">
+                  <div class="col-lg-4">
+                     <div class="footer-box">
+                        <div class="d-flex flex-column align-items-center">
+                           <div
+                              class="icon-box mb-3 d-flex justify-content-center align-items-center"
+                           >
+                              <i class="bi bi-truck"></i>
+                           </div>
+                           <h5>Fast Delivery</h5>
+                           <p class="text-muted mb-0">
+                              Deliver Products On Time
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-4">
+                     <div class="footer-box">
+                        <div class="d-flex flex-column align-items-center">
+                           <div
+                              class="icon-box mb-3 d-flex justify-content-center align-items-center"
+                           >
+                              <i class="bi bi-headset"></i>
+                           </div>
+                           <h5>24/7 Support</h5>
+                           <p class="text-muted mb-0">Get help anytime</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-4">
+                     <div class="footer-box">
+                        <div class="d-flex flex-column align-items-center">
+                           <div
+                              class="icon-box mb-3 d-flex justify-content-center align-items-center"
+                           >
+                              <i class="bi bi-patch-check-fill"></i>
+                           </div>
+                           <h5>100% Authentic</h5>
+                           <p class="text-muted mb-0">
+                              Guaranteed genuine products
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="container">
+            <div class="col-12">
+               <div class="copy-right py-3 d-flex justify-content-lg-between">
+                  <p class="mb-0">
+                     <small>© Copyrights reserved, 2024</small>
+                  </p>
+                  <p class="mb-0 text-uppercase text-muted">
+                     powered by: backbench stories
+                  </p>
+               </div>
+            </div>
+         </div>
+         <div class="whatsapp">
+            <img
+               src="images/icons/whatsapp.svg"
+               alt="whatsapp"
+               class="img-fluid"
+            />
+         </div>
+      </footer>
+
+      <!-- <div
+         class="modal fade loginModal"
+         id="loginModal"
+         tabindex="-1"
+         aria-labelledby="exampleModalLabel"
+         aria-hidden="true"
+      >
+         <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content py-4 px-4">
+               <div class="modal-header">
+                  <h3 class="modal-title" id="exampleModalLabel">
+                     Welcome Back
+                  </h3>
+                  <button
+                     type="button"
+                     class="btn-close"
+                     data-bs-dismiss="modal"
+                     aria-label="Close"
+                  ></button>
+               </div>
+               <div class="modal-body py-5">
+                  <form action="">
+                     <div class="form-group mb-4">
+                        <label>Country Code</label>
+                        <input
+                           class="form-control"
+                           type="text"
+                           placeholder="🇮🇳
+India (+91)"
+                        />
+                     </div>
+                     <div class="form-group mb-4">
+                        <label>Phone Number </label>
+                        <input
+                           class="form-control"
+                           type="text"
+                           placeholder="Enter Phone Number
+"
+                        />
+                     </div>
+                     <div class="form-group mb-4">
+                        <label>Email </label>
+                        <input
+                           class="form-control"
+                           type="email"
+                           placeholder="Enter Emailr
+"
+                        />
+                     </div>
+                     <div class="form-check">
+                        <input
+                           class="form-check-input"
+                           type="checkbox"
+                           value=""
+                           id="flexCheckDefault"
+                        />
+                        <label
+                           class="form-check-label text-dark"
+                           for="flexCheckDefault"
+                        >
+                           By continuing, you accept our Terms & Conditions and
+                           Privacy Policy.
+                        </label>
+                     </div>
+
+                     <div class="border-0 p-0">
+                        <div class="d-grid gap-2">
+                           <button
+                              type="button"
+                              class="btn btn-theme theme-bg btn-lg w-100 text-white"
+                              data-bs-dismiss="modal"
+                           >
+                              Send OTP
+                           </button>
+                        </div>
+                     </div>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div> -->
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script
+         src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+         crossorigin="anonymous"
+      ></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+      <script src="js/main.js"></script>
+      <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+   </body>
+</html>
