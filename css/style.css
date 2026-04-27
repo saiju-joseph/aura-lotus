@@ -13,7 +13,8 @@ h6 {
    /* font-family: 'Noto Sans', sans-serif; */
    font-family: 'Inter', sans-serif;
 }
-
+.accordion-button:focus,
+button:focus,
 .btn:focus {
    outline: none;
    box-shadow: none;
@@ -232,12 +233,6 @@ h6 {
    letter-spacing: 0.5px;
 }
 
-.category-menu li a:hover,
-.category-menu li.active a {
-   color: #788312;
-   border-bottom: 3px solid #788312;
-}
-
 .filter-menu .form-select {
    font-size: 0.85rem;
    font-weight: 500;
@@ -245,7 +240,10 @@ h6 {
    cursor: pointer;
    background-color: transparent;
    height: 50px;
-   border: transparent;
+}
+
+.filter-icon {
+   width: 30%;
 }
 
 .product-card {
@@ -379,6 +377,29 @@ h6 {
    left: 3%;
    font-size: 0.8rem;
    font-weight: 600;
+}
+
+.fav-card {
+   right: 0;
+   top: 3%;
+   right: 3%;
+   background-color: #fff;
+   width: 40px;
+   height: 40px;
+   border-radius: 50%;
+   font-size: 1.4rem;
+   z-index: 50;
+   transition: all 0.3s ease-in-out;
+   cursor: pointer;
+}
+
+.fav-card i {
+   transition: all 0.3s ease-in-out;
+   transform: scale(1);
+}
+
+.fav-card:hover i {
+   transform: scale(1.1);
 }
 
 .tag-card.new {
@@ -655,17 +676,18 @@ h6 {
 }
 
 .pro-desc-tab .nav-link {
-   text-transform: uppercase;
-   font-weight: 600;
-   font-size: 0.9rem;
+   font-size: 1.1rem;
+   font-weight: 500;
 }
 
 .find-style-tab .nav {
    justify-content: center;
+   border-bottom: transparent;
 }
 
 .pro-desc-tab .nav-link.active {
    color: #650606 !important;
+   border-color: transparent;
 }
 
 /* product slider */
