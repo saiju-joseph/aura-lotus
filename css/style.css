@@ -1500,3 +1500,9 @@ input[type='range']::-moz-range-thumb {
       height: 55vh;
    }
 }
+
+@media (max-width: 992px) {
+   .filter-icon {
+      width: 13%;
+   }
+}
