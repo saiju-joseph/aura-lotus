@@ -558,7 +558,7 @@
                </a>
             </div>
             <!-- Accordion -->
-            <div class="accordion" id="filterAccordion">
+            <div class="accordion filter-accordion" id="filterAccordion">
                <!-- Categories -->
                <div class="accordion-item border-0 border-bottom">
                   <h2 class="accordion-header">
@@ -577,7 +577,7 @@
                      class="accordion-collapse collapse"
                      data-bs-parent="#filterAccordion"
                   >
-                     <div class="accordion-body px-0 pt-2">
+                     <div class="accordion-body px-0 py-3">
                         <div class="form-check">
                            <input
                               class="form-check-input"
@@ -594,6 +594,23 @@
                               id="necklace"
                            />
                            <label class="form-check-label">Necklace</label>
+                        </div>
+
+                        <div class="form-check">
+                           <input
+                              class="form-check-input"
+                              type="checkbox"
+                              id="accessories"
+                           />
+                           <label class="form-check-label">Accessories</label>
+                        </div>
+                        <div class="form-check">
+                           <input
+                              class="form-check-input"
+                              type="checkbox"
+                              id="bridalset"
+                           />
+                           <label class="form-check-label">Bridal Set</label>
                         </div>
                      </div>
                   </div>
@@ -612,17 +629,35 @@
                      </button>
                   </h2>
 
-                  <div
-                     id="price"
-                     class="accordion-collapse collapse"
-                     data-bs-parent="#filterAccordion"
-                  >
-                     <div class="accordion-body px-0 pt-2">
-                        <input type="range" class="form-range" />
-                        <div class="d-flex justify-content-between">
-                           <small>₹100</small>
-                           <small>₹5000</small>
-                        </div>
+                  <div class="accordion-body px-0 pt-2">
+                     <!-- Price Label -->
+                     <div class="mb-2 fw-medium">
+                        ₹ <span id="minPrice">99</span> - ₹
+                        <span id="maxPrice">999</span>
+                     </div>
+
+                     <!-- Slider Wrapper -->
+                     <div class="range-slider position-relative">
+                        <!-- Track -->
+                        <div class="slider-track"></div>
+
+                        <!-- Min Range -->
+                        <input
+                           type="range"
+                           min="0"
+                           max="1000"
+                           value="99"
+                           id="minRange"
+                        />
+
+                        <!-- Max Range -->
+                        <input
+                           type="range"
+                           min="0"
+                           max="1000"
+                           value="500"
+                           id="maxRange"
+                        />
                      </div>
                   </div>
                </div>
@@ -643,9 +678,27 @@
       ></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
       <script src="js/main.js"></script>
-      <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-    -->
+
+      <script>
+         const minRange = document.getElementById('minRange');
+         const maxRange = document.getElementById('maxRange');
+         const minPrice = document.getElementById('minPrice');
+         const maxPrice = document.getElementById('maxPrice');
+         const gap = 50;
+         function updateSlider() {
+            if (parseInt(maxRange.value) - parseInt(minRange.value) <= gap) {
+               if (event.target.id === 'minRange') {
+                  minRange.value = maxRange.value - gap;
+               } else {
+                  maxRange.value = parseInt(minRange.value) + gap;
+               }
+            }
+
+            minPrice.textContent = minRange.value;
+            maxPrice.textContent = maxRange.value;
+         }
+         minRange.addEventListener('input', updateSlider);
+         maxRange.addEventListener('input', updateSlider);
+      </script>
    </body>
 </html>

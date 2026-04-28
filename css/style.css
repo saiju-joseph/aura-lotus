@@ -13,6 +13,8 @@ h6 {
    /* font-family: 'Noto Sans', sans-serif; */
    font-family: 'Inter', sans-serif;
 }
+
+.form-check-input:focus,
 .accordion-button:focus,
 button:focus,
 .btn:focus {
@@ -1330,6 +1332,70 @@ button:focus,
 .occassional-add .add-caption h1,
 .occassional-add .add-caption p {
    font-family: 'Imperial Script', cursive;
+}
+
+.filter-accordion .accordion-button:not(.collapsed) {
+   background-color: transparent;
+   color: #5e0402;
+}
+
+.filter-accordion .form-check-input {
+   width: 1.5rem;
+   height: 1.5rem;
+}
+
+.filter-accordion .form-check-label {
+   font-size: 0.9rem;
+   padding-left: 0.8rem;
+}
+
+.filter-accordion .form-check {
+   margin-bottom: 0.8rem;
+   display: flex;
+   align-items: center;
+}
+
+.range-slider {
+   height: 30px;
+}
+
+.range-slider input[type='range'] {
+   position: absolute;
+   width: 100%;
+   pointer-events: none;
+   -webkit-appearance: none;
+   background: none;
+}
+
+.slider-track {
+   position: absolute;
+   height: 7px;
+   width: 100%;
+   background: #ddd;
+   top: 35%;
+   transform: translateY(-50%);
+   border-radius: 5px;
+}
+
+input[type='range']::-webkit-slider-thumb {
+   pointer-events: auto;
+   -webkit-appearance: none;
+   height: 16px;
+   width: 16px;
+   background: #6b2c2c;
+   border-radius: 50%;
+   cursor: pointer;
+   border: 2px solid white;
+   box-shadow: 0 0 0 2px #6b2c2c;
+}
+
+input[type='range']::-moz-range-thumb {
+   pointer-events: auto;
+   height: 16px;
+   width: 16px;
+   background: #6b2c2c;
+   border-radius: 50%;
+   cursor: pointer;
 }
 
 /* mediaquery */
