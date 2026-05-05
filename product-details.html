@@ -1,0 +1,961 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Delius&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+         rel="stylesheet"
+      />
+      <link
+         rel="stylesheet"
+         href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+      />
+
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      />
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      />
+      <link
+         href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+         rel="stylesheet"
+         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+         crossorigin="anonymous"
+      />
+      <link rel="stylesheet" href="css/style.css" />
+      <title>Aura Lotus Fashion Studio</title>
+   </head>
+   <body>
+      <header>
+         <div class="container top-bar py-4">
+            <div class="row align-items-center justify-content-between">
+               <div class="col-lg-4 search-desktop d-none d-lg-block">
+                  <div class="search-wrapper">
+                     <i class="bi bi-search"></i>
+                     <input
+                        type="text"
+                        class="form-control search-box"
+                        placeholder="Search for products..."
+                     />
+                  </div>
+               </div>
+               <div class="col-lg-4 col-6 text-center">
+                  <a class="navbar-brand" href="index.html">
+                     <img
+                        src="images/logo.png"
+                        alt="Logo"
+                        class="img-fluid logo-image"
+                     />
+                  </a>
+               </div>
+               <div class="col-lg-4 col-6 icons-desktop">
+                  <div
+                     class="d-flex align-items-center justify-content-end nav-right nav-icons"
+                  >
+                     <a href="#" class="search d-inline-flex me-lg-4 me-3">
+                        <i class="bi bi-instagram"></i>
+                     </a>
+                     <div class="d-inline-flex position-relative me-lg-4 me-3">
+                        <a href="#" class="cart"><i class="bi bi-bag"></i></a>
+                        <span
+                           class="d-flex align-items-center justify-content-center notification"
+                           >0</span
+                        >
+                     </div>
+                     <div class="d-inline-flex position-relative">
+                        <ul class="list-unstyled drop-right-menu mb-0">
+                           <li class="nav-item dropdown me-lg-4 me-3">
+                              <a
+                                 class="dropdown-toggle"
+                                 href="#"
+                                 id="navbarDropdown"
+                                 role="button"
+                                 data-bs-toggle="dropdown"
+                                 aria-expanded="false"
+                              >
+                                 <i class="bi bi-person user"></i>
+                              </a>
+                              <ul
+                                 class="dropdown-menu shadow-sm"
+                                 aria-labelledby="navbarDropdown"
+                              >
+                                 <li>
+                                    <a
+                                       class="dropdown-item"
+                                       href="#"
+                                       data-bs-toggle="modal"
+                                       data-bs-target="#loginModal"
+                                       >Login</a
+                                    >
+                                 </li>
+                                 <li>
+                                    <a class="dropdown-item" href="#">Cart</a>
+                                 </li>
+                                 <li>
+                                    <a class="dropdown-item" href="#"
+                                       >Wishlist</a
+                                    >
+                                 </li>
+                              </ul>
+                           </li>
+                        </ul>
+                     </div>
+                     <!-- MOBILE MENU BUTTON -->
+                     <button
+                        class="navbar-toggler d-lg-none"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                     >
+                        <span class="navbar-toggler-icon"
+                           ><i class="bi bi-bar-chart"></i
+                        ></span>
+                     </button>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <nav class="navbar navbar-expand-lg navbar-light py-2">
+            <div class="container">
+               <!-- <button
+                  class="navbar-toggler order-lg-2"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarSupportedContent"
+                  aria-controls="navbarSupportedContent"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+               >
+                  <span class="navbar-toggler-icon"
+                     ><i class="bi bi-bar-chart"></i
+                  ></span>
+               </button> -->
+               <div
+                  class="collapse navbar-collapse order-lg-1"
+                  id="navbarSupportedContent"
+               >
+                  <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                     <li class="nav-item">
+                        <a
+                           class="nav-link active"
+                           aria-current="page"
+                           href="index.html"
+                           >Home</a
+                        >
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="shop.html">Shop</a>
+                     </li>
+                     <li class="nav-item dropdown">
+                        <a
+                           class="nav-link dropdown-toggle"
+                           href="#"
+                           id="navbarDropdown"
+                           role="button"
+                           data-bs-toggle="dropdown"
+                           aria-expanded="false"
+                        >
+                           Products
+                        </a>
+                        <ul
+                           class="dropdown-menu"
+                           aria-labelledby="navbarDropdown"
+                        >
+                           <li>
+                              <a class="dropdown-item" href="#">Product One</a>
+                           </li>
+                           <li>
+                              <a class="dropdown-item" href="#">Product Two</a>
+                           </li>
+                           <li>
+                              <a class="dropdown-item" href="#"
+                                 >Product Three</a
+                              >
+                           </li>
+                        </ul>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </nav>
+      </header>
+      <main class="main py-5">
+         <div class="container">
+            <div class="row g-lg-5">
+               <div class="col-lg-6">
+                  <div class="gallery">
+                     <!-- Thumbnails -->
+                     <div class="thumbnails">
+                        <img
+                           src="images/new.jpeg"
+                           class="thumb active img-fluid"
+                        />
+                        <img src="images/pro-1.jpg" class="thumb img-fluid" />
+                        <img src="images/pro-2.jpg" class="thumb img-fluid" />
+                     </div>
+
+                     <!-- Main Image -->
+                     <div class="flex-grow-1 main-wrapper">
+                        <img
+                           id="mainImage"
+                           src="images/new.jpeg"
+                           class="main-image img-fluid"
+                        />
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-6">
+                  <div class="product-summary">
+                     <h1 class="product-title main-head text-center">
+                        Mohini Coloured Jhumka
+                     </h1>
+                     <!-- <div class="d-flex g-2">
+                        <div class="rating">
+                           <span><i class="bi bi-star-fill"></i></span>
+                           <span><i class="bi bi-star-fill"></i></span>
+                           <span><i class="bi bi-star-fill"></i></span>
+                           <span><i class="bi bi-star-fill"></i></span>
+                           <span><i class="bi bi-star-fill"></i></span>
+                        </div>
+                        <p class="text-secondary ps-3">
+                           (5 out of 5) (5 reviews )
+                        </p>
+                     </div> -->
+                     <!-- <div class="brand py-2">
+                        <p class="text-uppercase fw-bold mb-2">
+                           Fabric: <span class="text-secondary">Cotton</span>
+                        </p>
+                        <p class="text-uppercase fw-bold mb-2">
+                           Length:
+                           <span class="text-secondary">Calf-length</span>
+                        </p>
+                        <p class="text-uppercase fw-bold mb-2">
+                           Style:
+                           <span class="text-secondary">Straight fit</span>
+                        </p>
+                     </div> -->
+                     <!-- <div class="sizes d-flex gap-3 align-items-center mb-3">
+                        <p class="fw-bold mb-0">Size</p>
+                        <select
+                           class="form-select"
+                           style="max-width: 9rem"
+                           aria-label="Default select example"
+                        >
+                           <option selected><small>Select Size</small></option>
+                           <option value="1">L</option>
+                           <option value="2">XL</option>
+                           <option value="3">XXL</option>
+                        </select>
+                     </div> -->
+                     <div class="price-info text-center">
+                        <p class="lead text-uppercase">
+                           <span class="fw-bold new-price"
+                              ><i class="bi bi-currency-rupee"></i>799.00</span
+                           >
+                           <!-- <span class="old-price"
+                              ><i class="bi bi-currency-rupee"></i>999.00</span
+                           >
+                           <span class="tag-card new position-relative fw-bold"
+                              >33.33% off</span
+                           > -->
+                        </p>
+                     </div>
+
+                     <div class="product-btn d-flex gap-3 align-items-center">
+                        <div class="qty-wrapper">
+                           <button class="qty-btn" id="minus" disabled="">
+                              −
+                           </button>
+                           <span class="qty-value" id="qty">1</span>
+                           <button class="qty-btn" id="plus">+</button>
+                        </div>
+                        <a
+                           href="cart.html"
+                           class="btn theme-btn theme-bg btn-lg mt-3 w-100"
+                        >
+                           Add to Cart
+                        </a>
+                        <!-- <a
+                           href="#"
+                           class="btn btn-outline-secondary btn-lg mt-3"
+                           ><i class="bi bi-heart"></i
+                        ></a>
+                        <a href="#" class="btn btn-whatsapp btn-lg mt-3"
+                           ><i class="bi bi-whatsapp"></i
+                        ></a> -->
+                     </div>
+                     <div class="exp-date py-3">
+                        <p>
+                           <small>Expected delivery date:</small> 12 May, 2026
+                        </p>
+                     </div>
+                     <div class="coupon-code">
+                        <p>SKU : JK40</p>
+                     </div>
+                     <!-- <div class="delivery-features mt-3">
+                        <p class="text-dark d-flex gap-lg-4 gap-2">
+                           <span
+                              ><i class="bi bi-truck pe-3"></i
+                              ><small class="text-muted"
+                                 >Fast Delivery</small
+                              ></span
+                           >
+                           <span
+                              ><i class="bi bi-check-circle pe-3"></i
+                              ><small class="text-muted"
+                                 >Quality Approved</small
+                              ></span
+                           >
+                           <span
+                              ><i class="bi bi-person-standing-dress"></i
+                              ><small class="text-muted"
+                                 >Premium Materials</small
+                              ></span
+                           >
+                        </p>
+                     </div> -->
+                     <div class="pro-cart-details">
+                        <p class="text-muted">
+                           Lorem ipsum dolor sit amet consectetur adipisicing
+                           elit. Impedit quisquam in consectetur nobis adipisci
+                           minus!
+                        </p>
+                     </div>
+                     <div class="reviews">
+                        <p class="lead fw-bold">Ratings & Reviews</p>
+                        <div class="row align-items-center">
+                           <!-- LEFT SIDE -->
+                           <div class="col-md-3 text-center">
+                              <div class="big-rating">0</div>
+
+                              <div class="stars my-2">
+                                 <i class="bi bi-star"></i>
+                                 <i class="bi bi-star"></i>
+                                 <i class="bi bi-star"></i>
+                                 <i class="bi bi-star"></i>
+                                 <i class="bi bi-star"></i>
+                              </div>
+
+                              <p class="mb-3">0 Ratings</p>
+
+                              <button class="btn btn-danger">Add Rating</button>
+                           </div>
+
+                           <!-- RIGHT SIDE -->
+                           <div class="col-md-9">
+                              <!-- 5 Star -->
+                              <div class="d-flex align-items-center mb-2">
+                                 <div style="width: 50px">
+                                    5 <span class="Warning-color">★</span>
+                                 </div>
+                                 <div class="progress flex-grow-1 mx-2">
+                                    <div
+                                       class="progress-bar"
+                                       style="width: 0%"
+                                    ></div>
+                                 </div>
+                                 <div style="width: 30px">0</div>
+                              </div>
+
+                              <!-- 4 Star -->
+                              <div class="d-flex align-items-center mb-2">
+                                 <div style="width: 50px">
+                                    4 <span class="Warning-color">★</span>
+                                 </div>
+                                 <div class="progress flex-grow-1 mx-2">
+                                    <div
+                                       class="progress-bar"
+                                       style="width: 0%"
+                                    ></div>
+                                 </div>
+                                 <div style="width: 30px">0</div>
+                              </div>
+
+                              <!-- 3 Star -->
+                              <div class="d-flex align-items-center mb-2">
+                                 <div style="width: 50px">
+                                    3 <span class="Warning-color">★</span>
+                                 </div>
+                                 <div class="progress flex-grow-1 mx-2">
+                                    <div
+                                       class="progress-bar"
+                                       style="width: 0%"
+                                    ></div>
+                                 </div>
+                                 <div style="width: 30px">0</div>
+                              </div>
+
+                              <!-- 2 Star -->
+                              <div class="d-flex align-items-center mb-2">
+                                 <div style="width: 50px">
+                                    2 <span class="Warning-color">★</span>
+                                 </div>
+                                 <div class="progress flex-grow-1 mx-2">
+                                    <div
+                                       class="progress-bar"
+                                       style="width: 0%"
+                                    ></div>
+                                 </div>
+                                 <div style="width: 30px">0</div>
+                              </div>
+
+                              <!-- 1 Star -->
+                              <div class="d-flex align-items-center">
+                                 <div style="width: 50px">
+                                    1 <span class="Warning-color">★</span>
+                                 </div>
+                                 <div class="progress flex-grow-1 mx-2">
+                                    <div
+                                       class="progress-bar"
+                                       style="width: 0%"
+                                    ></div>
+                                 </div>
+                                 <div style="width: 30px">0</div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="pro-desc-tab mt-4">
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                           <li class="nav-item" role="presentation">
+                              <button
+                                 class="nav-link active"
+                                 id="f-tab2"
+                                 data-bs-toggle="tab"
+                                 data-bs-target="#tab2"
+                                 type="button"
+                                 role="tab"
+                                 aria-controls="profile"
+                                 aria-selected="false"
+                              >
+                                 Newest
+                              </button>
+                           </li>
+                           <li class="nav-item" role="presentation">
+                              <button
+                                 class="nav-link"
+                                 id="f-tab3"
+                                 data-bs-toggle="tab"
+                                 data-bs-target="#tab3"
+                                 type="button"
+                                 role="tab"
+                                 aria-controls="contact"
+                                 aria-selected="false"
+                              >
+                                 Most Rated
+                              </button>
+                           </li>
+                           <li class="nav-item" role="presentation">
+                              <button
+                                 class="nav-link"
+                                 id="f-tab4"
+                                 data-bs-toggle="tab"
+                                 data-bs-target="#tab4"
+                                 type="button"
+                                 role="tab"
+                                 aria-controls="contact"
+                                 aria-selected="false"
+                              >
+                                 Oldest
+                              </button>
+                           </li>
+                        </ul>
+                        <div class="tab-content" id="myTabContent">
+                           <div
+                              class="tab-pane fade show active"
+                              id="tab2"
+                              role="tabpanel"
+                              aria-labelledby="f-tab2"
+                           >
+                              <div class="p-3 my-4">
+                                 <p>Reviews Yet</p>
+                              </div>
+                           </div>
+                           <div
+                              class="tab-pane fade"
+                              id="tab3"
+                              role="tabpanel"
+                              aria-labelledby="f-tab3"
+                           >
+                              <div class="p-3 my-4">
+                                 <p>No Reviews Yet</p>
+                              </div>
+                           </div>
+                           <div
+                              class="tab-pane fade"
+                              id="tab4"
+                              role="tabpanel"
+                              aria-labelledby="f-tab4"
+                           >
+                              <div class="p-3 my-4">
+                                 <p>Lorem ipsum dolor sit amet.</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="col-lg-12 mt-3">
+                  <div class="row g-4">
+                     <div class="col-12 text-center mb-5">
+                        <h1 class="product-title main-head">Similar Product</h1>
+                        <div class="head-border-line"></div>
+                     </div>
+                     <div class="col-lg-3">
+                        <div class="product-collections">
+                           <div class="product-card shadow-sm image-card">
+                              <div class="image-wrapper">
+                                 <div class="d-flex justify-content-between">
+                                    <div class="tag-card new shadow-sm">
+                                       30% Off
+                                    </div>
+                                    <div
+                                       class="fav-card d-flex justify-content-center align-items-center position-absolute shadow-sm"
+                                    >
+                                       <i class="bi bi-heart"></i>
+                                    </div>
+                                 </div>
+
+                                 <img
+                                    src="images/pro-6.png"
+                                    alt="collections"
+                                    class="img-fluid"
+                                 />
+                              </div>
+                              <div class="product-details py-3">
+                                 <div class="pro-name">Product One</div>
+                                 <div class="pro-price">
+                                    <p class="text-uppercase mb-0">
+                                       <span class="fw-bold new-price"
+                                          ><i class="bi bi-currency-rupee"></i
+                                          >799.00</span
+                                       >
+                                       <span class="old-price"
+                                          ><i class="bi bi-currency-rupee"></i
+                                          >999.00</span
+                                       >
+                                    </p>
+                                 </div>
+                              </div>
+                              <div class="d-grid">
+                                 <button class="btn bg-btn" type="button">
+                                    Add to Cart
+                                 </button>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-lg-3">
+                        <div class="product-collections">
+                           <div class="product-card shadow-sm image-card">
+                              <div class="image-wrapper">
+                                 <div class="d-flex justify-content-between">
+                                    <div class="tag-card new shadow-sm">
+                                       30% Off
+                                    </div>
+                                    <div
+                                       class="fav-card d-flex justify-content-center align-items-center position-absolute shadow-sm"
+                                    >
+                                       <i class="bi bi-heart"></i>
+                                    </div>
+                                 </div>
+                                 <img
+                                    src="images/pro-7.png"
+                                    alt="collections"
+                                    class="img-fluid"
+                                 />
+                              </div>
+                              <div class="product-details py-3">
+                                 <div class="pro-name">Product One</div>
+                                 <div class="pro-price">
+                                    <p class="text-uppercase mb-0">
+                                       <span class="fw-bold new-price"
+                                          ><i class="bi bi-currency-rupee"></i
+                                          >799.00</span
+                                       >
+                                       <span class="old-price"
+                                          ><i class="bi bi-currency-rupee"></i
+                                          >999.00</span
+                                       >
+                                    </p>
+                                 </div>
+                              </div>
+                              <div class="d-grid">
+                                 <button
+                                    class="btn bg-btn disabled"
+                                    type="button"
+                                 >
+                                    Add to Cart
+                                 </button>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-lg-3">
+                        <div class="product-collections">
+                           <div class="product-card shadow-sm image-card">
+                              <div class="image-wrapper">
+                                 <div class="d-flex justify-content-between">
+                                    <div class="tag-card new shadow-sm">
+                                       30% Off
+                                    </div>
+                                    <div
+                                       class="fav-card d-flex justify-content-center align-items-center position-absolute shadow-sm"
+                                    >
+                                       <i class="bi bi-heart"></i>
+                                    </div>
+                                 </div>
+                                 <img
+                                    src="images/pro-8.png"
+                                    alt="collections"
+                                    class="img-fluid"
+                                 />
+                              </div>
+                              <div class="product-details py-3">
+                                 <div class="pro-name">Product One</div>
+                                 <div class="pro-price">
+                                    <p class="text-uppercase mb-0">
+                                       <span class="fw-bold new-price"
+                                          ><i class="bi bi-currency-rupee"></i
+                                          >2799.00</span
+                                       >
+                                       <span class="old-price"
+                                          ><i class="bi bi-currency-rupee"></i
+                                          >999.00</span
+                                       >
+                                    </p>
+                                 </div>
+                              </div>
+                              <div class="d-grid">
+                                 <button class="btn bg-btn" type="button">
+                                    Add to Cart
+                                 </button>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-lg-3">
+                        <div class="product-collections">
+                           <div class="product-card shadow-sm image-card">
+                              <div class="image-wrapper">
+                                 <div
+                                    class="tag-card bg-danger shadow-sm text-white"
+                                 >
+                                    Out of stock
+                                 </div>
+                                 <img
+                                    src="images/pro-9.png"
+                                    alt="collections"
+                                    class="img-fluid"
+                                 />
+                              </div>
+                              <div class="product-details py-3">
+                                 <div class="pro-name">Product One</div>
+                                 <div class="pro-price">
+                                    <p class="text-uppercase mb-0">
+                                       <span class="fw-bold new-price"
+                                          ><i class="bi bi-currency-rupee"></i
+                                          >1799.00</span
+                                       >
+                                       <span class="old-price"
+                                          ><i class="bi bi-currency-rupee"></i
+                                          >999.00</span
+                                       >
+                                    </p>
+                                 </div>
+                              </div>
+                              <div class="d-grid">
+                                 <button
+                                    class="btn bg-btn disabled"
+                                    type="button"
+                                 >
+                                    Add to Cart
+                                 </button>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-12 text-center mt-4">
+                     <button type="button" class="btn btn-dark text-white mt-3">
+                        Explore All
+                     </button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </main>
+      <footer class="footer pt-lg-5">
+         <div class="container footer-bottom-line">
+            <div class="row footer-inner">
+               <div class="col-lg-4 pe-lg-5">
+                  <div class="footer-about pt-lg-5 text-center">
+                     <div class="footer-logo mb-3">
+                        <img
+                           src="images/logo.png"
+                           alt="Logo"
+                           class="footerlogo img-fluid"
+                        />
+                     </div>
+                     <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Curabitur dui ante, molestie vitae nisi eu, dictum
+                        interdum mi. Aenean congue porta posuere. Phasellus
+                        rutrum non lorem ut faucibus. Mauris vel lacinia nibh.
+                     </p>
+                  </div>
+               </div>
+               <div class="col-lg-3 col-6">
+                  <div class="footer-menu pt-5">
+                     <h5 class="mb-3">Quick Links</h5>
+                     <ul class="list-unstyled">
+                        <li>
+                           <span
+                              ><i class="bi bi-chevron-double-right"></i></span
+                           ><a href="index.html">Home</a>
+                        </li>
+                        <li>
+                           <span
+                              ><i class="bi bi-chevron-double-right"></i></span
+                           ><a href="#">About Us</a>
+                        </li>
+                        <li>
+                           <span
+                              ><i class="bi bi-chevron-double-right"></i></span
+                           ><a href="#">New Arrivals</a>
+                        </li>
+                        <li>
+                           <span
+                              ><i class="bi bi-chevron-double-right"></i></span
+                           ><a href="#">Products</a>
+                        </li>
+                        <li>
+                           <span
+                              ><i class="bi bi-chevron-double-right"></i></span
+                           ><a href="#l">Contact Us</a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-lg-2 col-6">
+                  <div class="footer-menu pt-5">
+                     <h5 class="mb-3">INFORMATION</h5>
+                     <ul class="list-unstyled">
+                        <li>
+                           <span
+                              ><i class="bi bi-chevron-double-right"></i></span
+                           ><a href="#">about us</a>
+                        </li>
+                        <li>
+                           <span
+                              ><i class="bi bi-chevron-double-right"></i></span
+                           ><a href="#">privacy policy</a>
+                        </li>
+
+                        <li>
+                           <span
+                              ><i class="bi bi-chevron-double-right"></i></span
+                           ><a href="#">shipping policy</a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-lg-3">
+                  <div class="footer-menu social-list pt-5">
+                     <h5 class="mb-3">Follow Us</h5>
+                     <span class="flex-center"
+                        ><a href="#"><i class="bi bi-facebook"></i></a
+                     ></span>
+                     <span class="flex-center"
+                        ><a href="#"><i class="bi bi-instagram"></i></a
+                     ></span>
+                     <span class="flex-center"
+                        ><a href="#"><i class="bi bi-twitter-x"></i></a
+                     ></span>
+                     <span class="flex-center"
+                        ><a href="#"><i class="bi bi-linkedin"></i></a
+                     ></span>
+                     <span class="flex-center"
+                        ><a href="#"><i class="bi bi-youtube"></i></a
+                     ></span>
+                  </div>
+               </div>
+            </div>
+            <div class="container py-5">
+               <div class="row">
+                  <div class="col-lg-4">
+                     <div class="footer-box">
+                        <div class="d-flex flex-column align-items-center">
+                           <div
+                              class="icon-box mb-3 d-flex justify-content-center align-items-center"
+                           >
+                              <i class="bi bi-truck"></i>
+                           </div>
+                           <h5>Fast Delivery</h5>
+                           <p class="text-muted mb-0">
+                              Deliver Products On Time
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-4">
+                     <div class="footer-box">
+                        <div class="d-flex flex-column align-items-center">
+                           <div
+                              class="icon-box mb-3 d-flex justify-content-center align-items-center"
+                           >
+                              <i class="bi bi-headset"></i>
+                           </div>
+                           <h5>24/7 Support</h5>
+                           <p class="text-muted mb-0">Get help anytime</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-4">
+                     <div class="footer-box">
+                        <div class="d-flex flex-column align-items-center">
+                           <div
+                              class="icon-box mb-3 d-flex justify-content-center align-items-center"
+                           >
+                              <i class="bi bi-patch-check-fill"></i>
+                           </div>
+                           <h5>100% Authentic</h5>
+                           <p class="text-muted mb-0">
+                              Guaranteed genuine products
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="container">
+            <div class="col-12">
+               <div class="copy-right py-3 d-flex justify-content-lg-between">
+                  <p class="mb-0">
+                     <small>© Copyrights reserved, 2024</small>
+                  </p>
+                  <p class="mb-0 text-uppercase text-muted">
+                     powered by: backbench stories
+                  </p>
+               </div>
+            </div>
+         </div>
+         <div class="whatsapp">
+            <img
+               src="images/icons/whatsapp.svg"
+               alt="whatsapp"
+               class="img-fluid"
+            />
+         </div>
+      </footer>
+
+      <!-- <div
+         class="modal fade loginModal"
+         id="loginModal"
+         tabindex="-1"
+         aria-labelledby="exampleModalLabel"
+         aria-hidden="true"
+      >
+         <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content py-4 px-4">
+               <div class="modal-header">
+                  <h3 class="modal-title" id="exampleModalLabel">
+                     Welcome Back
+                  </h3>
+                  <button
+                     type="button"
+                     class="btn-close"
+                     data-bs-dismiss="modal"
+                     aria-label="Close"
+                  ></button>
+               </div>
+               <div class="modal-body py-5">
+                  <form action="">
+                     <div class="form-group mb-4">
+                        <label>Country Code</label>
+                        <input
+                           class="form-control"
+                           type="text"
+                           placeholder="🇮🇳
+India (+91)"
+                        />
+                     </div>
+                     <div class="form-group mb-4">
+                        <label>Phone Number </label>
+                        <input
+                           class="form-control"
+                           type="text"
+                           placeholder="Enter Phone Number
+"
+                        />
+                     </div>
+                     <div class="form-group mb-4">
+                        <label>Email </label>
+                        <input
+                           class="form-control"
+                           type="email"
+                           placeholder="Enter Emailr
+"
+                        />
+                     </div>
+                     <div class="form-check">
+                        <input
+                           class="form-check-input"
+                           type="checkbox"
+                           value=""
+                           id="flexCheckDefault"
+                        />
+                        <label
+                           class="form-check-label text-dark"
+                           for="flexCheckDefault"
+                        >
+                           By continuing, you accept our Terms & Conditions and
+                           Privacy Policy.
+                        </label>
+                     </div>
+
+                     <div class="border-0 p-0">
+                        <div class="d-grid gap-2">
+                           <button
+                              type="button"
+                              class="btn btn-theme theme-bg btn-lg w-100 text-white"
+                              data-bs-dismiss="modal"
+                           >
+                              Send OTP
+                           </button>
+                        </div>
+                     </div>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div> -->
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script
+         src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+         crossorigin="anonymous"
+      ></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+      <script src="js/main.js"></script>
+      <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+   </body>
+</html>
