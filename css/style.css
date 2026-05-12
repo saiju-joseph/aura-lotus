@@ -24,11 +24,15 @@ button:focus,
 
 .btn {
    letter-spacing: 1px;
-   border-radius: 6px;
+   border-radius: 3px;
    font-size: 0.875rem;
    line-height: 1.25rem;
-   font-weight: 600;
-   padding: 0.7rem 1.2rem;
+   font-weight: 500;
+   padding: 0.8rem 1.2rem;
+}
+
+.navbar-brand {
+   margin-right: 0;
 }
 
 .bg-btn {
@@ -41,12 +45,12 @@ button:focus,
 }
 
 .search-box {
-   max-width: 280px;
    border-radius: 4px;
    border-width: 1px;
    padding: 0.75rem 1rem 0.75rem 3rem;
    font-size: 0.875rem;
    line-height: 1.25rem;
+   border-color: #111;
 }
 
 .search-box:focus {
@@ -63,11 +67,11 @@ button:focus,
    top: 50%;
    left: 12px;
    transform: translateY(-50%);
-   color: #888;
+   color: #111;
 }
 
 .carousel-inner {
-   height: 90vh;
+   height: 65vh;
 }
 
 .carousel-item {
@@ -137,7 +141,6 @@ button:focus,
 
 .navbar-light .navbar-nav .nav-link {
    color: #111;
-   text-transform: uppercase;
    font-weight: 500;
    font-family: 'Jost', sans-serif;
 }
@@ -254,9 +257,14 @@ button:focus,
    text-align: center;
    position: relative;
    transition: all 0.3s ease-in-out;
-   border-radius: 0.75rem;
+   border-radius: 0.4rem;
    overflow: hidden;
-   border: 1px solid #e2e8f0;
+}
+
+.product-card .product-details {
+   display: flex;
+   flex-direction: column;
+   gap: 0.8rem;
 }
 
 .product-card:hover {
@@ -502,7 +510,7 @@ button:focus,
 .old-price {
    text-decoration: line-through;
    color: #888;
-   margin-right: 20px;
+   font-size: 0.9rem;
 }
 
 .new-price {
@@ -589,6 +597,10 @@ button:focus,
 .footer-menu li i {
    color: #0c0e02;
    padding-right: 0.5rem;
+}
+
+.footer-menu ul {
+   margin-bottom: 0;
 }
 
 .social-list i {
@@ -681,6 +693,7 @@ button:focus,
    font-size: 1.1rem;
    font-weight: 500;
    color: #2a2a2a;
+   padding: 0;
 }
 
 .find-style-tab .nav {
@@ -688,8 +701,29 @@ button:focus,
    border-bottom: transparent;
 }
 
+.pro-desc-tab .nav-item {
+   position: relative;
+   padding: 0 25px;
+}
+
+.pro-desc-tab .nav-item:not(:last-child)::after {
+   content: '|';
+   position: absolute;
+   right: -2px;
+   top: 50%;
+   transform: translateY(-50%);
+   color: #000;
+}
+
 .pro-desc-tab .nav-link.active {
    color: #650606 !important;
+   background-color: transparent;
+   border-color: transparent;
+   border-bottom: 2px solid #111 !important;
+}
+
+.nav-tabs .nav-link:hover {
+   border-color: transparent;
 }
 
 /* product slider */
@@ -1138,6 +1172,7 @@ button:focus,
 
 .product-collections .pro-name {
    font-size: 1.2rem;
+   color: #111;
 }
 
 .product-collections .image-wrapper img {
@@ -1476,10 +1511,51 @@ input[type='range']::-moz-range-thumb {
    cursor: pointer;
 }
 
+.review-card {
+   background: #f6f6f6;
+   border-radius: 10px;
+   padding: 30px;
+}
+
+.review-stars i {
+   color: #f4b400;
+   font-size: 0.8rem;
+   margin-right: 2px;
+}
+
+.review-title {
+   font-size: 1.1rem;
+   font-weight: 500;
+   margin: 20px 0 15px;
+   color: #111;
+}
+
+.review-text {
+   color: #666;
+   line-height: 1.7;
+   font-size: 0.9rem;
+   margin-bottom: 25px;
+}
+
+.verified {
+   color: #797979;
+}
+
+.verified i {
+   color: #f4b400;
+   margin-right: 6px;
+}
+
+@media (max-width: 576px) {
+   .review-card {
+      padding: 20px;
+   }
+}
+
 /* mediaquery */
 @media (min-width: 992px) {
    .logo-image {
-      width: 40%;
+      width: 33%;
    }
    .navbar-brand {
       width: 10%;
@@ -1500,6 +1576,9 @@ input[type='range']::-moz-range-thumb {
 
    .thumbnails {
       flex-direction: row;
+   }
+   .pro-desc-tab .nav-item::after {
+      display: none;
    }
 }
 

@@ -60,6 +60,35 @@ $(document).ready(function () {
    });
 });
 
+//review carousel
+
+$(document).ready(function () {
+   $('.review-slider').owlCarousel({
+      loop: true,
+      margin: 20,
+      nav: false,
+      dots: false,
+      // navText: [
+      //    "<span class='custom-prev'>&#10094;</span>",
+      //    "<span class='custom-next'>&#10095;</span>"
+      // ],
+      responsive: {
+         0: {
+            items: 1
+         },
+         576: {
+            items: 2
+         },
+         768: {
+            items: 3
+         },
+         1200: {
+            items: 3.5
+         }
+      }
+   });
+});
+
 //product gallery
 
 const thumbs = document.querySelectorAll('.thumb');
