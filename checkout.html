@@ -125,6 +125,16 @@
                      </button>
                   </div>
                </div>
+               <div class="col-lg-3 search-desktop d-blck d-lg-none mt-3">
+                  <div class="search-wrapper">
+                     <i class="bi bi-search"></i>
+                     <input
+                        type="text"
+                        class="form-control search-box"
+                        placeholder="Search for products..."
+                     />
+                  </div>
+               </div>
             </div>
          </div>
 
@@ -150,7 +160,7 @@
                   <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                      <li class="nav-item">
                         <a
-                           class="nav-link"
+                           class="nav-link active"
                            aria-current="page"
                            href="index.html"
                            >Home</a
@@ -161,7 +171,7 @@
                      </li>
                      <li class="nav-item dropdown">
                         <a
-                           class="nav-link dropdown-toggle active"
+                           class="nav-link dropdown-toggle"
                            href="#"
                            id="navbarDropdown"
                            role="button"
@@ -196,150 +206,296 @@
       <main class="main py-5">
          <div class="container">
             <div class="row g-lg-5 g-5">
-               <div class="col-lg-7">
-                  <div class="cart-card p-3">
-                     <div class="row justify-content-between">
-                        <div class="col-lg-2">
-                           <div class="item-container">
-                              <img
-                                 src="images/pro-1.jpg"
-                                 alt="cart image"
-                                 class="img-fluid rounded-3"
-                              />
+               <div class="col-lg-8">
+                  <div class="billing-form">
+                     <h3 class="card-title">Billing details</h3>
+                     <form>
+                        <div class="mb-3 row">
+                           <div class="col-lg-6">
+                              <label class="form-label"
+                                 >First name<span class="text-danger"
+                                    >*</span
+                                 ></label
+                              >
+                              <input type="text" class="form-control" />
+                           </div>
+                           <div class="col-lg-6">
+                              <label class="form-label"
+                                 >Last name<span class="text-danger"
+                                    >*</span
+                                 ></label
+                              >
+                              <input type="text" class="form-control" />
                            </div>
                         </div>
-                        <div class="col-lg-7 col-6 py-lg-0 py-3">
-                           <div class="item-cart-detail">
-                              <div>
-                                 <p class="mb-0">Lorem ipsum dolor sit amet.</p>
-                                 <p class="text-muted">
-                                    <small>lorem impsum</small>
-                                 </p>
-                              </div>
-                              <p class="delete-btn mb-0">
-                                 <span><i class="bi bi-trash pe-1"></i></span
-                                 ><small class="text-muted">Remove</small>
-                              </p>
-                           </div>
-                        </div>
-                        <div class="col-auto py-lg-0 py-3">
-                           <div class="cart-price">
-                              <p>
-                                 <span class="item-cart-price"
-                                    ><i class="bi bi-currency-rupee"></i
-                                    >799</span
-                                 >
-                                 <span class="old-price me-0"
-                                    ><i class="bi bi-currency-rupee"></i
-                                    >999.00</span
-                                 >
-                              </p>
-                           </div>
-                           <div class="qty-wrapper">
-                              <button class="qty-btn" id="minus">−</button>
-                              <span class="qty-value" id="qty">1</span>
-                              <button class="qty-btn" id="plus">+</button>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <!-- --------------cartitem 2------------------------ -->
-                  <div class="cart-card p-3">
-                     <div class="row justify-content-between">
-                        <div class="col-lg-2">
-                           <div class="item-container">
-                              <img
-                                 src="images/pro-2.jpg"
-                                 alt="cart image"
-                                 class="img-fluid rounded-3"
-                              />
-                           </div>
-                        </div>
-                        <div class="col-lg-7 col-6 py-lg-0 py-3">
-                           <div class="item-cart-detail">
-                              <div>
-                                 <p class="mb-0">Lorem ipsum dolor sit amet.</p>
-                                 <p class="text-muted">
-                                    <small>lorem impsum</small>
-                                 </p>
-                              </div>
-                              <p class="delete-btn mb-0">
-                                 <span><i class="bi bi-trash pe-1"></i></span
-                                 ><small class="text-muted">Remove</small>
-                              </p>
-                           </div>
-                        </div>
-                        <div class="col-auto py-lg-0 py-3">
-                           <div class="cart-price">
-                              <p>
-                                 <span class="item-cart-price"
-                                    ><i class="bi bi-currency-rupee"></i
-                                    >799</span
-                                 >
-                                 <span class="old-price me-0"
-                                    ><i class="bi bi-currency-rupee"></i
-                                    >999.00</span
-                                 >
-                              </p>
-                           </div>
-                           <div class="qty-wrapper">
-                              <button class="qty-btn" id="minus">−</button>
-                              <span class="qty-value" id="qty">1</span>
-                              <button class="qty-btn" id="plus">+</button>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-lg-5">
-                  <div class="order-card order-summary">
-                     <h3 class="card-title">Order Summary</h3>
-                     <div class="coupon-section">
-                        <label>Offers & Coupons</label>
-                        <div class="coupon-box">
+                        <!-- <div class="mb-3">
+                           <label class="form-label"
+                              >Company name (optional)<span class="text-danger"
+                                 >*</span
+                              ></label
+                           >
+                           <input type="text" class="form-control" />
+                        </div> -->
+                        <!-- <div class="mb-3">
+                           <label class="form-label"
+                              >Country / Region<span class="text-danger"
+                                 >*</span
+                              ></label
+                           >
+                           <select
+                              class="form-select"
+                              aria-label="Default select example"
+                           >
+                              <option selected>Open this select menu</option>
+                              <option value="1">India</option>
+                              <option value="2">SriLanka</option>
+                              <option value="3">UK</option>
+                           </select>
+                        </div> -->
+                        <!-- <div class="mb-3">
+                           <label class="form-label"
+                              >Street address
+                              <span class="text-danger">*</span></label
+                           >
                            <input
                               type="text"
-                              placeholder="Enter or select a coupon"
+                              class="form-control"
+                              placeholder="House number and street name"
                            />
-                           <button class="btn btn-dark disabled">Apply</button>
+                        </div> -->
+                        <!-- <div class="mb-3">
+                           <label class="form-label"
+                              >Town / City <span class="text-danger">*</span></label
+                           >
+                           <input
+                              type="text"
+                              class="form-control"
+                              placeholder="House number and street name"
+                           />
+                        </div> -->
+                        <!-- <div class="mb-3">
+                           <label class="form-label"
+                              >State / Country
+                              <span class="text-danger">*</span></label
+                           >
+                           <select
+                              class="form-select"
+                              aria-label="Default select example"
+                           >
+                              <option selected>Open this select menu</option>
+                              <option value="1">India</option>
+                              <option value="2">SriLanka</option>
+                              <option value="3">UK</option>
+                           </select>
+                        </div> -->
+                        <div class="mb-3">
+                           <label class="form-label"
+                              >Email address
+                              <span class="text-danger">*</span></label
+                           >
+                           <input type="email" class="form-control" />
+                        </div>
+                        <div class="mb-3">
+                           <label class="form-label"
+                              >Phone <span class="text-danger">*</span></label
+                           >
+                           <div class="row">
+                              <div class="col-lg-9 col-12 mb-3 mb-lg-0">
+                                 <!-- <input type="text" class="form-control" /> -->
+                                 <div class="input-group flex-nowrap">
+                                    <select
+                                       class="form-select"
+                                       style="max-width: 120px"
+                                    >
+                                       <option value="+91" selected>
+                                          +91 India
+                                       </option>
+                                       <option value="+1">+1 USA</option>
+                                       <option value="+44">+44 UK</option>
+                                       <option value="+61">
+                                          +61 Australia
+                                       </option>
+                                    </select>
+                                    <input
+                                       type="tel"
+                                       class="form-control"
+                                       inputmode="numeric"
+                                       pattern="[0-9]*"
+                                       id="phoneInput"
+                                    />
+                                 </div>
+                              </div>
+                              <div class="col-lg-3 col-6">
+                                 <button
+                                    type="button"
+                                    class="btn btn-outline-danger w-100"
+                                    disabled
+                                    style="padding: 0.8rem 0.7rem"
+                                 >
+                                    OTP Verification
+                                 </button>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="mb-3 d-none" id="otpSection">
+                           <label class="form-label">
+                              Enter OTP <span class="text-danger">*</span>
+                           </label>
+                           <input
+                              type="text"
+                              class="form-control w-50"
+                              placeholder="Enter OTP"
+                              maxlength="6"
+                           />
+                        </div>
+                        <div class="row">
+                           <div class="col-lg-6 mb-3">
+                              <label class="form-label"
+                                 >Area <span class="text-danger">*</span></label
+                              >
+                              <input
+                                 type="text"
+                                 class="form-control"
+                                 placeholder="House number and street name"
+                              />
+                           </div>
+                           <div class="col-lg-6 mb-3">
+                              <label class="form-label"
+                                 >⁠Near by Landmark
+                                 <span class="text-danger">*</span></label
+                              >
+                              <input
+                                 type="text"
+                                 class="form-control"
+                                 placeholder="House number and street name"
+                              />
+                           </div>
+                        </div>
+                        <div class="row">
+                           <div class="col-lg-6 mb-3">
+                              <label class="form-label"
+                                 >⁠P.O. Box No
+                                 <span class="text-danger">*</span></label
+                              >
+                              <input
+                                 type="text"
+                                 class="form-control"
+                                 placeholder="House number and street name"
+                              />
+                           </div>
+                           <div class="col-lg-6 mb-3">
+                              <label class="form-label"
+                                 >Emirates
+                                 <span class="text-danger">*</span></label
+                              >
+                              <input
+                                 type="text"
+                                 class="form-control"
+                                 placeholder="House number and street name"
+                              />
+                           </div>
+                        </div>
+                        <!-- <div class="mb-3 pt-3">
+                           <div class="form-check create-account-check mb-3">
+                              <input
+                                 class="form-check-input"
+                                 type="checkbox"
+                                 id="createAccountCheckbox"
+                              />
+                              <label
+                                 class="form-check-label"
+                                 for="createAccountCheckbox"
+                              >
+                                 Create an account?
+                              </label>
+                           </div>
+
+                           <div id="createAccountSection" class="d-none">
+                              <div class="mb-3">
+                                 <label class="form-label">
+                                    Create account password
+                                    <span class="text-danger">*</span>
+                                 </label>
+                                 <input
+                                    type="password"
+                                    class="form-control"
+                                    placeholder="Password"
+                                 />
+                              </div>
+                           </div>
+                        </div> -->
+                     </form>
+                  </div>
+               </div>
+               <div class="col-lg-4">
+                  <div class="order-card order-summary">
+                     <h3 class="card-title">Your Order</h3>
+                     <p class="fw-bold mb-1">Product</p>
+                     <hr />
+                     <div class="py-3">
+                        <div class="row-line">
+                           <span
+                              >Embrace effortless elegance white cotton
+                              dress</span
+                           >
+                           <strong>₹1800.00</strong>
                         </div>
 
-                        <div class="coupon-empty">No coupons available</div>
+                        <div class="row-line">
+                           <span
+                              >Embrace effortless elegance white cotton
+                              dress</span
+                           >
+                           <strong>₹1800.00</strong>
+                        </div>
                      </div>
-                     <hr />
-                     <div class="row-line">
-                        <span>Item Price</span>
-                        <strong>₹1800.00</strong>
-                     </div>
-
-                     <div class="row-line">
-                        <span>Product Discounts:</span>
+                     <div class="row-line discount mt-3">
+                        <span>Subtotal</span>
                         <strong>-₹801</strong>
                      </div>
                      <hr />
-                     <div class="row-line total pb-3">
-                        <span>Order Total:</span>
+                     <p class="fw-bold mb-1">Shipping</p>
+                     <hr />
+                     <div class="row-line total py-2">
+                        <span>Total</span>
                         <strong>₹999.00</strong>
                      </div>
-
-                     <!-- <p class="shipping-note">
-                        Free Shipping Inside Kerala.<br />
-                        Delivery Charge will be applicable outside kerala starts
-                        at Rs.150
-                     </p> -->
-
-                     <a
-                        href="checkout.html"
-                        class="btn theme-btn theme-bg w-100"
-                     >
-                        Proceed to Checkout
-                     </a>
-
-                     <p class="terms mt-2">
-                        By proceeding, you agree to our
-                        <a href="#">Terms of Service</a> and
-                        <a href="#">Privacy Policy</a>
-                     </p>
+                     <hr />
+                     <p class="fw-bold">Payment methods</p>
+                     <div class="py-3">
+                        <div class="form-check custom-radio mb-3">
+                           <input
+                              class="form-check-input"
+                              type="radio"
+                              name="flexRadioDefault"
+                              id="flexRadioDefault1"
+                           />
+                           <label
+                              class="form-check-label"
+                              for="flexRadioDefault1"
+                           >
+                              Cash on Delivery
+                           </label>
+                        </div>
+                        <div class="form-check custom-radio">
+                           <input
+                              class="form-check-input"
+                              type="radio"
+                              name="flexRadioDefault"
+                              id="flexRadioDefault2"
+                              checked
+                           />
+                           <label
+                              class="form-check-label"
+                              for="flexRadioDefault2"
+                           >
+                              Credit/Debit Card (<small>Coming soon</small>)
+                           </label>
+                        </div>
+                     </div>
+                     <button class="btn btn-dark buy-btn mt-3">
+                        Place Order
+                     </button>
                   </div>
                </div>
             </div>
@@ -415,7 +571,7 @@
                         <li>
                            <span
                               ><i class="bi bi-chevron-double-right"></i></span
-                           ><a href="privacy-policy.html">shipping policy</a>
+                           ><a href="shipping-policy.html">shipping policy</a>
                         </li>
                      </ul>
                   </div>
@@ -462,8 +618,8 @@
             />
          </div>
       </footer>
-      <!-- Modal -->
-      <div
+
+      <!-- <div
          class="modal fade loginModal"
          id="loginModal"
          tabindex="-1"
@@ -543,12 +699,14 @@ India (+91)"
                </div>
             </div>
          </div>
-      </div>
+      </div> -->
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
       <script
          src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
          integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
          crossorigin="anonymous"
       ></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
       <script src="js/main.js"></script>
       <!--
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>

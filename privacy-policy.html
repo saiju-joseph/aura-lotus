@@ -125,6 +125,16 @@
                      </button>
                   </div>
                </div>
+               <div class="col-lg-3 search-desktop d-blck d-lg-none mt-3">
+                  <div class="search-wrapper">
+                     <i class="bi bi-search"></i>
+                     <input
+                        type="text"
+                        class="form-control search-box"
+                        placeholder="Search for products..."
+                     />
+                  </div>
+               </div>
             </div>
          </div>
 
@@ -150,7 +160,7 @@
                   <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                      <li class="nav-item">
                         <a
-                           class="nav-link"
+                           class="nav-link active"
                            aria-current="page"
                            href="index.html"
                            >Home</a
@@ -161,7 +171,7 @@
                      </li>
                      <li class="nav-item dropdown">
                         <a
-                           class="nav-link dropdown-toggle active"
+                           class="nav-link dropdown-toggle"
                            href="#"
                            id="navbarDropdown"
                            role="button"
@@ -195,151 +205,103 @@
 
       <main class="main py-5">
          <div class="container">
-            <div class="row g-lg-5 g-5">
-               <div class="col-lg-7">
-                  <div class="cart-card p-3">
-                     <div class="row justify-content-between">
-                        <div class="col-lg-2">
-                           <div class="item-container">
-                              <img
-                                 src="images/pro-1.jpg"
-                                 alt="cart image"
-                                 class="img-fluid rounded-3"
-                              />
-                           </div>
-                        </div>
-                        <div class="col-lg-7 col-6 py-lg-0 py-3">
-                           <div class="item-cart-detail">
-                              <div>
-                                 <p class="mb-0">Lorem ipsum dolor sit amet.</p>
-                                 <p class="text-muted">
-                                    <small>lorem impsum</small>
-                                 </p>
-                              </div>
-                              <p class="delete-btn mb-0">
-                                 <span><i class="bi bi-trash pe-1"></i></span
-                                 ><small class="text-muted">Remove</small>
-                              </p>
-                           </div>
-                        </div>
-                        <div class="col-auto py-lg-0 py-3">
-                           <div class="cart-price">
-                              <p>
-                                 <span class="item-cart-price"
-                                    ><i class="bi bi-currency-rupee"></i
-                                    >799</span
-                                 >
-                                 <span class="old-price me-0"
-                                    ><i class="bi bi-currency-rupee"></i
-                                    >999.00</span
-                                 >
-                              </p>
-                           </div>
-                           <div class="qty-wrapper">
-                              <button class="qty-btn" id="minus">−</button>
-                              <span class="qty-value" id="qty">1</span>
-                              <button class="qty-btn" id="plus">+</button>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <!-- --------------cartitem 2------------------------ -->
-                  <div class="cart-card p-3">
-                     <div class="row justify-content-between">
-                        <div class="col-lg-2">
-                           <div class="item-container">
-                              <img
-                                 src="images/pro-2.jpg"
-                                 alt="cart image"
-                                 class="img-fluid rounded-3"
-                              />
-                           </div>
-                        </div>
-                        <div class="col-lg-7 col-6 py-lg-0 py-3">
-                           <div class="item-cart-detail">
-                              <div>
-                                 <p class="mb-0">Lorem ipsum dolor sit amet.</p>
-                                 <p class="text-muted">
-                                    <small>lorem impsum</small>
-                                 </p>
-                              </div>
-                              <p class="delete-btn mb-0">
-                                 <span><i class="bi bi-trash pe-1"></i></span
-                                 ><small class="text-muted">Remove</small>
-                              </p>
-                           </div>
-                        </div>
-                        <div class="col-auto py-lg-0 py-3">
-                           <div class="cart-price">
-                              <p>
-                                 <span class="item-cart-price"
-                                    ><i class="bi bi-currency-rupee"></i
-                                    >799</span
-                                 >
-                                 <span class="old-price me-0"
-                                    ><i class="bi bi-currency-rupee"></i
-                                    >999.00</span
-                                 >
-                              </p>
-                           </div>
-                           <div class="qty-wrapper">
-                              <button class="qty-btn" id="minus">−</button>
-                              <span class="qty-value" id="qty">1</span>
-                              <button class="qty-btn" id="plus">+</button>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-lg-5">
-                  <div class="order-card order-summary">
-                     <h3 class="card-title">Order Summary</h3>
-                     <div class="coupon-section">
-                        <label>Offers & Coupons</label>
-                        <div class="coupon-box">
-                           <input
-                              type="text"
-                              placeholder="Enter or select a coupon"
-                           />
-                           <button class="btn btn-dark disabled">Apply</button>
-                        </div>
-
-                        <div class="coupon-empty">No coupons available</div>
-                     </div>
-                     <hr />
-                     <div class="row-line">
-                        <span>Item Price</span>
-                        <strong>₹1800.00</strong>
-                     </div>
-
-                     <div class="row-line">
-                        <span>Product Discounts:</span>
-                        <strong>-₹801</strong>
-                     </div>
-                     <hr />
-                     <div class="row-line total pb-3">
-                        <span>Order Total:</span>
-                        <strong>₹999.00</strong>
-                     </div>
-
-                     <!-- <p class="shipping-note">
-                        Free Shipping Inside Kerala.<br />
-                        Delivery Charge will be applicable outside kerala starts
-                        at Rs.150
-                     </p> -->
-
-                     <a
-                        href="checkout.html"
-                        class="btn theme-btn theme-bg w-100"
-                     >
-                        Proceed to Checkout
-                     </a>
-
-                     <p class="terms mt-2">
-                        By proceeding, you agree to our
-                        <a href="#">Terms of Service</a> and
-                        <a href="#">Privacy Policy</a>
+            <div class="col-12">
+               <div class="privacy-policy">
+                  <div class="col-12 mb-5">
+                     <h1 class="product-title main-head">
+                        Shipping and Cancellation
+                     </h1>
+                     <h4>Cancellation Policy</h4>
+                     <p class="pt-3">
+                        If you wish to cancel or modify your order, please send
+                        an email to
+                        <a href="mailto:mail@gmail.com"> mail@gmail.com</a>
                      </p>
+                     <p>
+                        We will make every effort to accommodate your request.
+                        However, any request for cancellation must be made
+                        within 12 hours of placing the order
+                     </p>
+                     <ul>
+                        <li>
+                           Once an order has been submitted, unfortunately, we
+                           cannot process a request for cancellation
+                        </li>
+                        <li>
+                           Refund for domestic orders will be done in 5-7 days,
+                           and international orders will be done in 7-12 days
+                        </li>
+                     </ul>
+                     <p>
+                        Refunds for domestic orders will be done in 5-7 days,
+                        and international orders, in 7-12 days in the case of
+                        online payments done through a Credit/Debit/Net banking
+                        facility.
+                     </p>
+                     <p>
+                        Please note that if your order includes customised
+                        blouse stitching, fall /pico, blouse detachment or
+                        tasseling as per your request, cancellation or changes
+                        are not possible.
+                     </p>
+                     <h4 class="pt-3">
+                        Tulsi Madras Shipping Policy, Shipping Information -
+                        INDIA
+                     </h4>
+                     <ul>
+                        <li>
+                           We offer free shipping in India for all orders over
+                           the value of Rs. 10,000.
+                        </li>
+                        <li>
+                           While we make our best efforts to deliver each item
+                           in your order within 7-10 business days of your
+                           placing the order, in rare cases, a slight delay may
+                           occur due to unforeseeable circumstances, govt.
+                           interventions or natural causes, etc. which we cannot
+                           be held responsible for.
+                        </li>
+                     </ul>
+                     <h4 class="pt-3">Shipping Information - International</h4>
+                     <ul>
+                        <li>We ship to over 230 countries worldwide.</li>
+                        <li>
+                           We exclusively use reputed and reliable carriers such
+                           as FedEx, DHL, Blue Dart etc. to ship your order
+                        </li>
+                        <li>
+                           Shipping Charges are based on the shipping
+                           destination and weight of your parcel. Shipping
+                           companies determine shipping charges based on the
+                           package weight, customs clearance and various other
+                           factors.
+                        </li>
+                        <li>
+                           For maximum savings, we recommend ordering 4-5 sarees
+                           together for availing an optimized shipping rate.
+                           Please write to us at
+                           <a href="mailto:mail@gmail.com"> mail@gmail.com</a>
+                        </li>
+                        <li>
+                           Our delivery partners offer contactless delivery.
+                           Please note that proof of delivery will be digital.
+                           We would be unable to entertain any dispute for the
+                           want of a physical signature
+                        </li>
+                        <li>
+                           International delivery schedules are subject to any
+                           delays at transit, entry, customs and location
+                           accessibility points. We cannot be held responsible
+                           for any unforeseen delays from the carrier's end.
+                        </li>
+                        <li>
+                           Duties and taxes and any additional customs will be
+                           applicable as per your country's regulations and are
+                           to be borne by the customer. These shall be billed
+                           separately to you by the courier company at the time
+                           of delivery.
+                        </li>
+                     </ul>
                   </div>
                </div>
             </div>
@@ -415,7 +377,7 @@
                         <li>
                            <span
                               ><i class="bi bi-chevron-double-right"></i></span
-                           ><a href="privacy-policy.html">shipping policy</a>
+                           ><a href="shipping-policy.html">shipping policy</a>
                         </li>
                      </ul>
                   </div>
@@ -462,8 +424,8 @@
             />
          </div>
       </footer>
-      <!-- Modal -->
-      <div
+
+      <!-- <div
          class="modal fade loginModal"
          id="loginModal"
          tabindex="-1"
@@ -543,12 +505,14 @@ India (+91)"
                </div>
             </div>
          </div>
-      </div>
+      </div> -->
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
       <script
          src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
          integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
          crossorigin="anonymous"
       ></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
       <script src="js/main.js"></script>
       <!--
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
